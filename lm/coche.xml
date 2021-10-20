@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vehiculo>
+  <coches>
+    <marca>Peugeot 3008</marca>
+    <color>rojo</color>
+    <puertas>5</puertas>
+    <ruedas>4</ruedas>
+    <motor>1000 cv</motor>
+  </coches>
+<!--  <coches>
+    <marca>Nissan Qasqai</marca>
+    <color>gris perlado</color>
+    <puertas>5</puertas>
+    <ruedas>4</ruedas>
+    <motor>110 cv</motor>
+  </coches>-->
+</vehiculo>

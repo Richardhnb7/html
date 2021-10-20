@@ -1,0 +1,4 @@
+
+	<h1> Mi nombre es Richard </h1>
+	<h2> Mis apellidos son Nenjer Bahamonde </h2>
+	<h3> cada vez el texto se va haciendo mas pequeño </h3>

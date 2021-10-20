@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<examenes>
+  <materia>
+    <nombre>lenguaje de marcas</nombre>
+    <profesor>Guillermo Palao</profesor>
+    <fecha>29 de noviembre</fecha>
+    <aula>informatica 02</aula>
+  </materia>
+  <materia>
+    <nombre>Entornos de Desarollo</nombre>
+    <profesor>Guillerno Palao</profesor>
+    <fecha>13 de diciembre</fecha>
+    <aula>informatica 01</aula>
+  </materia>
+  <materia>
+    <nombre>Diseño de Interfaces</nombre>
+    <profesor>Ricardo Muñoz</profesor>
+    <fecha> 29 de noviembre</fecha>
+    <aula> informatica 01</aula>
+  </materia>
+  <materia>
+    <nombre>Desarollo web en entorno servidor </nombre>
+    <profesor>Manuel Esteso</profesor>
+    <fecha>05 de diciembre</fecha>
+    <aula>informatica 01</aula>
+  </materia>
+
+</examenes>
