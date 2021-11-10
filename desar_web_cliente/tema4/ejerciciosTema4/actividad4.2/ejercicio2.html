@@ -8,15 +8,18 @@
 </head>
 <body>
     <script>
-        let palabras=new Set();
+        let palabras=new Array;
         let frase;
 
         frase =prompt('Introduce el texto');
 
-        for(let palabra of frase.split(' ')){//en la ultima parte la despieza en cahchitos para 
-            palabras.add(palabra)//que sea contado y introducido dentro de palabras
+        for(let palabra of frase.split(' ')){
+           if (!palabras.includes(palabra)) {
+               palabras.push(palabra);
+           }
+            
         }
-        console.log(palabras.size)//este te devuelve el tamaño de la palabra
+        console.log(palabras.length);
     </script>
 </body>
 </html>
