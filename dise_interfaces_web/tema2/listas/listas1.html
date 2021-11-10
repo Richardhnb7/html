@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        la propiedasd list-style-type modifica el marcador de los 
+        elementos de la lista
+        none,disc,circle,squad(cuadrado),decimal, decimal-leading-zero
+
+        list-style-image: url("img/smile.png"); nos permite utilzar como 
+        marca edl elemento de la lista una imagen
+
+        
+    -->
+    <style>
+        #none{
+            list-style-type:none ;
+        }
+        #disc{
+            list-style-type:disc ;
+        }
+        #circle{
+            list-style-type:circle ;
+        }
+        #decimal{
+            list-style-type:decimal ;
+        }
+        #dcl{
+            list-style-type: decimal-leading-zero;
+        }
+
+        #ur{
+            list-style-type: upper-roman;
+        }
+        #chino{
+            list-style-type:cjk-ideographic;
+        }
+        #image{
+            list-style-image: url("img/smile.png");
+        }
+
+    </style>
+    
+</head>
+<body>
+    <ul id="chino">
+        <li>japo</li>
+        <li>japo</li>
+    </ul>
+
+    <ul id="ur">
+        <li>roman</li>
+        <li>roman</li>
+    </ul>
+    <ul id="dcl">
+        <li>dcl</li>
+        <li>dcl</li>
+    </ul>
+    <ul id="decimal">
+        <li>decimal</li>
+        <li>decimal</li>
+    </ul>
+    <ul id="circle">
+        <li>circle</li>
+        <li>circle</li>
+    </ul>
+    <ul id="none">
+        <li>none</li>
+        <li>none</li>
+        <li>none</li>
+        <li>none</li>
+    </ul>
+    <ul id="image">
+        <li>imagen</li>
+        <li>imagen</li>
+        <li>imagen</li>
+    </ul>
+    <!--
+        ul#none>li{unos}*4
+    -->
+    <ul id="disc">
+        <li>disc</li>
+        <li>disc</li>
+    </ul>
+    <!--ejemplo de clase -->
+    <ol id="disc"><!--lista ordenada que salga con un disc-->
+        list-style-image: url("img/smile.png");      <li>hola</li>
+        <li>hola</li>
+        <li>hola</li>
+    </ol>
+    <ul id="decimal"><!--lista no ordenada, que pase a ser ordenada-->
+        <li>dos</li>
+        <li>dos</li>
+        <li>dos</li>
+        <li>dos</li>
+        <li>dos</li>
+    </ul>
+</body>
+</html>

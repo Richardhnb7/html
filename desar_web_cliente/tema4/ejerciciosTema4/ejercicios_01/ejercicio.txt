@@ -1,0 +1,11 @@
+un prgograma que pida teres cadenas buscara en la primera
+ la seguna y cuando la encuentre la cambiara por la tercera
+ poder utilzar el replace no el otro
+
+ hacer un programa que nos pida una palabra y nos la muestre
+  con forma de triangulo 
+  hola
+  hol
+  ho
+  h
+  hacerl de tres formas diferentes 

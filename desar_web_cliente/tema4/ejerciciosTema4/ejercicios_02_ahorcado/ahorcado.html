@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //Si hay de mas de dos letras seria de esta forma
+        //para poder ponerlas 
+        let secreta=[];
+        let palabra='richard';
+        let progreso=[];
+        let posicion
+        let letra;
+        let limite=3, intentos=0;
+
+        secreta=palabra.split("")
+
+        console.log(secreta)
+
+        for(indice in secreta){//condicion de finalizacion
+            progreso.unshift(" ")
+        }
+
+        while (intentos<limite) {
+            
+            letra=prompt("di una letra")
+            posicion=secreta.indexOf(letra)
+            if (posicion==-1) 
+                intentos++
+
+            console.log(`intentos:${intentos}`)
+            while (posicion!=-1) {
+                progreso[posicion]=letra;
+                secreta[posicion]="";//esta te borra la letra del array original 
+                // para poder poner si la letra esta repetida
+                posicion=secreta.indexOf(letra)
+
+            }
+            console.log(secreta)
+            console.log(progreso)
+        }
+
+    </script>
+</body>
+</html>

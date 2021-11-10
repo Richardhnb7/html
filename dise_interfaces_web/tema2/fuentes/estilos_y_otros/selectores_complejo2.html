@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div + p{
+
+            color: salmon;
+        }
+        div {
+            border: 3px dotted blue;
+        }
+
+    </style>
+    <!-- afecta al ultimo elemento al que tenga un hermano al lado 
+    o a su mismo nivel el elemento puesto, solo colorearia el 
+    segundo, sino esta pegadoya no le efectaria
+    -->
+</head>
+<body>
+    <div>este div</div>
+    <p>esto es un parrafo</p>
+    <div>
+        <p>esto es un paraafo</p>
+        <ul>
+            <li>esto es una lsita
+                <p>esto es un parrrafo</p>
+            </li>
+        </ul>
+        <p>esto es un parrrafo</p>
+    </div>
+    <p>esto es un parrafo</p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let palabra="richard";
+
+            for (let  i= palabra.length -1 ; i>=0;i --) {
+                document.write(`${palabra[i]}`);
+            }
+            document.write(`<br>`);
+           for (let i in palabra) {
+                document.write(`${palabra.charAt(palabra.length -1-i )}`);
+                console.log(`${palabra.length -1 } ${i} ${palabra.length-1 -1}`); 
+           }
+        
+    </script>
+</body>
+</html>

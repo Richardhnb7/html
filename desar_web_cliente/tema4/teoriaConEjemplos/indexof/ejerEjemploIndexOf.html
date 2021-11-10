@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // hacer una web que introducir una cadena y introduce un caracter, y cuantas veces aparece ese 
+        // en la cadena dicho caracter 
+        let palabra,contador=0, posicion, caracter;
+        palabra=prompt("di una paalabra");
+        caracter=prompt("di un caracter");
+        posicion=palabra.indexOf(caracter);
+            // aqui te da la primera psocion donde se encuentre ese caracter
+        while (posicion!=-1) {
+            //te va transfiriendo a la siguiente posicion, esta posicion se ira 
+            // guardando, y cuando 
+            //no encuentre mas el caracter te dara un -1 y de esta forma dejara
+            // el bucle 
+            //alert(posicion);
+            contador++;
+            posicion=palabra.indexOf(caracter,posicion+1);
+        }
+        document.write(`el caracter ${caracter} aparece ${contador} en ${palabra}`);
+    </script>
+</body>
+</html>

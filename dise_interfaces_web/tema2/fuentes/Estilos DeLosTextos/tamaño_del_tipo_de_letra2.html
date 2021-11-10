@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Festive&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+    <!--son los likns de las fuentes de las letras que no este-->
+    <style>
+    
+        p#unidadesabs{
+            font-family: 'Dancing Script', cursive;
+
+                font-size: 1cm;
+                font-weight: 100;
+                font-style: oblique;
+                font-variant-ligatures: normal;
+                /* 
+                bolder, mas oscuro que del que depende, 
+                lghther para hacerlo mas ligero, tamaño del ancho de la letra
+                */
+                /*
+                para a funete del estilo de letra
+                */
+                /*
+                ligaduras unir terminacion de palabras como mano alzada 
+                */
+
+        }
+        span#unidadesrel{
+            font-family: 'Festive', cursive;
+            font-size: 2em;
+            font-weight: lighter;
+            /*font-size:1000%*/
+            /*
+            lo que hace lo multiplica el tamaño de la letra fuente
+            */
+        }
+
+    </style>
+
+</head>
+<body>
+    <!--valores absolutos-->
+<!--
+    valores numericos con unidades absolutas pueden ser pt,cm,px, etc
+    Desde el año 2010 se desaconseja el uso de estas.porque notenian las 
+    opciones de los relativos, se siguen usando en los bordes
+-->
+<p id="unidadesabs">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Quia architecto neque earum accusamus voluptatibus blanditiis!
+</p>
+<p >
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure rerum fuga labore nobis. Itaque, voluptatum?
+</p>
+
+<p >
+    Lorem ipsum, dolor sit amet    L<span id="unidadesrel">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatum vitae rem!
+    </span>consectetur adipisicing elit. Iure rerum fuga labore nobis. Itaque, voluptatum?
+ 
+</p>
+</body>
+</html>

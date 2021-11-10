@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol>
+        <script>
+            /*
+            lo que se hace en este SCRIPT es abrirse  ina lista ordenada
+            que te pide un nombre con el promt y con un doc.writ. se abre 
+            y cierra <li> para añadir datos dentro de las listas  
+            */
+            let nombre;
+            nombre=prompt("dame un nombre");
+            while (nombre.toLowerCase().trim()!="fin") {
+                document.write(`<li>${nombre}</li>`);
+                nombre=prompt("dame otro nombre");
+            }
+            /* La comparacion en java script es conn dos iguales;
+            trim() quita los espacios en blanco en las cadenas */
+        </script>
+    </ol>
+    
+</body>
+</html>

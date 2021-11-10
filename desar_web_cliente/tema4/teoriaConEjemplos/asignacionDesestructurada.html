@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <script>
+        let a=5;
+        let b=6;
+        let numeros =[1,2,3,4,5,6];
+        let rest=[];
+        const vehiculos=['seat','toyota',"ford"]
+
+        // si quiero intercambiar valores de las variables sin la necesidad de un auxiliar
+
+
+        [b,a]=[a,b];
+        console.log(`a vale ${a} y b vale ${b}`);
+        [a,b, ...rest]=numeros;
+        console.log(`a vale ${a} y b vale ${b} y rest vale ${rest}`);
+
+        coche1=vehiculos[0];
+        coche2=vehiculos[1];
+        coche3=vehiculos[2];
+        [coche1,coche2,coche3]=vehiculos;
+        console.log(coche1,coche2,coche3)
+        /*
+        rellenar un array de 5*5 con valores aleatorios entre 
+        el 1 y el 10
+        */
+    </script>
+    
+</body>
+</html>

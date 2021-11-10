@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div  ~ p,h1{
+
+            color: red;
+        }
+        div{
+            border: 1px solid lime;
+        }
+        p{
+            color: brown;
+        }
+
+    </style>
+    <!--
+        como el anterior pero el hermano tenia que estar pegado pero 
+        en este no hace falta, solo tiene que estar al mismo nivel que el div
+        dos que entren en conflicto la ultima es la que permmanece
+    -->
+</head>
+<body>
+    <div>
+        <p style="color: pink;">parrafo
+            <ul>
+                <li>elemento</li>
+            </ul>
+        </p>
+        <p>otro parrafo</p>
+        <pre>esto no es un parrafo</pre>
+    </div>
+    <p>esto es un parrafo</p>
+    <h1>hola</h1>
+    <p>esto es un parrafo</p>
+
+</body>
+</html>

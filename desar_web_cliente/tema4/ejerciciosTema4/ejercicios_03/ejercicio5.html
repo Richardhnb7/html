@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--hacer un bucle for que cuente del 0-100
+    <script>
+
+        for (let i = 0; i <=100 ; i++) {
+            document.write(`${i%11}<br>`);//afrupaciones de numeros
+            
+        }
+    </script>
+-->
+    <!--hacer un progrma que nos pida una cadena y unn unmero de varios digitos y
+    queremos que nos muestre el principio de caada cadena -->
+        <script>
+            let cadena="hola soy yo"
+            let cadena_nueva=""
+            let numero="156"
+            let i=0;
+            for (let c of cadena) {
+                //document.write(c.repeat(2)+"<br>")
+                cadena_nueva+=c.repeat(numero.charAt(i++%numero.length))
+                /*lo que hace es repetir en funcion del numero en esa posicion te lee 
+                y el lenght te la longitud y lo hace en bucle hasta tterminar el bucle*/
+
+                /* += esto lo que hace es concatenar sintener que poner esa variable 
+                otra vez despues del igual*/
+            }
+            document.write(cadena_nueva)
+        </script>
+
+
+</body>
+</html>

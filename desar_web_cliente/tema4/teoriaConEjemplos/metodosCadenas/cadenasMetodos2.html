@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //slice(inicio, fin), se puede poner numeros negativos, que 
+        // que significa que sera por la derecha
+        let cadena="hola soy richard";
+        let nombre="ricardo, javier, manuel, oscar";
+        let arrayNombres;
+        console.log(cadena.slice(3,7));
+        console.log(cadena.slice(3,-2));
+        console.log(cadena.slice(-7,-1));
+  
+        //split convierte una cadena en un array
+        arrayNombres=nombre.split(",")
+        console.log(arrayNombres);
+
+        //chartCodeAt lo que hace es dar el valor de la tabla como el asci
+        //te da el valor en dicha tabla, entre parentesis la psocion de la 
+        //letra a saber el codigo 
+        console.log("a".charCodeAt(0));
+
+
+    </script>
+</body>
+</html>

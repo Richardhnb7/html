@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 activiadad 1 </title>
+</head>
+<body>
+    <script>
+        
+        let Numeros_introducidos,Numero_guardado,contador;
+        Numero_guardado=0;
+        contador=1;
+        Numeros_introducidos=parseInt(prompt("introduce numeros"));
+        document.write(`${Numeros_introducidos}, `);
+        while (Numeros_introducidos > Numero_guardado) {
+            Numero_guardado=Numeros_introducidos;
+            Numeros_introducidos=parseInt(prompt("introduce numeros"));
+            document.write(`${Numeros_introducidos}, `);
+            contador ++;
+        }
+        document.write(`Finalizado y has introducido ${contador} numeros`);
+
+    </script>
+</body>
+</html>

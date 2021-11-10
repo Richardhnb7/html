@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--
+        recorrer un array con un bucle for
+        com no se debe hacer 
+    -->
+    <script>
+        let animales=['perro','oso',,'ordenador',2];
+        document.write('<ol>');
+            for (let i = 0; i < animales.length; i++) {
+                document.write(`<li>valor ${animales[i]}</li>`);
+            }
+        document.write('</ol>');
+        document.write('<ol>');
+            //for in se repetira tanatas veces elementos tenga la agrupacion 
+            //forma recomendable pero no esactamente esta
+            // en este solo leeria las que tiene valor
+            for (let i in animales) {
+                document.write(`<li>valor ${animales[i]}</li>`);
+            }
+        document.write('</ol>');
+        document.write('<ol>');
+            //este si te coge los indefinidos 
+            // por cada elemento en cada iteracion te pondra todos los valores 
+            //aunque no tenga valores 
+            for (let i of animales) {
+                document.write(`<li>valor ${i}</li>`);
+            }
+        document.write('</ol>');
+
+    </script>
+</body>
+</html>

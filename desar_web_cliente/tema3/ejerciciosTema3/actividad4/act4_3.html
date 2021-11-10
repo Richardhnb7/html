@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let palabra;
+        palabra =" ";
+
+        while (palabra) {
+            
+            palabra =prompt("di una palabra");
+            document.write(`${"*".repeat(10)} con el for i <br>`);
+            for (let  i= 0;  i< palabra.length; i ++) {
+                document.write(`${palabra.charAt(i)} <br>`);
+            }
+                document.write(`${"*".repeat(10)} con el for in <br>`);
+            for (let i  in palabra) {
+                document.write(`${palabra.charAt(i)} <br>`)
+            }
+            document.write(`${"*".repeat(10)} con el for of <br>`);
+            for (let caracter of palabra) {
+                document.write(`${caracter} <br>`);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        los formularios: rellenar, recoger informacion
+            estructura:  
+            form
+            (la interogacion en la url es que apartir de ahi vienen los datos y el& una nueva variable metodo, esto es el get)
+                method: get(), post() 
+                action: destino de datos 
+    -->
+    <h1>Mi Formulario</h1>
+
+    <form action="respuesta.html" method="GET"><!--con el 'POST' no es visible lo enviado, se usa cualquiera pero cada uno tiene 
+    sus ventajas -->
+        <label for="Nombre">Nombre</label><!--'label'relacionada con el 'input' y le da una etiqueta; 'for' dice que esa es la 
+            etiqueta para un 'imput' y que lo relaciona con el 'id'-->
+        
+        <input id="Nombre" type="text" name="vnombre"><br><!--'Text' introduccion de datos; 'id' relaciona con el 'label' para al 
+            pinchar poder escribir, 'name' nombre de la variable que aparecera arriba cuandoo se envie los datos -->
+        
+        <label for="clave">clave</label>
+        <!--'input#clave' te pone lo de abajo-->
+        
+        <input id="clave" type="password" name="vclave"><br>
+        
+        <input type="submit" value="Enviar datos"><!--'submit'un boton , con 'value' indicar lo que hace el botton, lo que hace 
+            es enviar los datos a la pagina que has puesto-->
+        <input type="reset" value="Clear texbox"><!--resetea los imput-->
+        
+        <input type="button" value="lo que le diga"><!--con java script se le dira lo que hace--> 
+        
+        <!--lista desplegable, el value es lo que se envia ariba-->
+        <select name="ciudad" id="">
+            <optgroup label="España">
+                <option value="30510">Yecla</option>
+                <option selected value="30520">Jumilla</option><!-- 'selected' te deja esa seleccionada-->
+                <option value="02310">Alicante</option>
+            </optgroup>
+        </select>
+    </form>
+    <!--los "div" sirben para maquetacion-->
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--ejemplo de pagina web que muestre los 10 primeros 
+        numerosimpares
+  
+   
+    <script>
+        //para escribr en la pantalla
+        //document.write("hola")
+        let contador,numero;
+        contador=0;
+        numero=1;
+        while (contador<=10) {
+            if ((numero%2)==1) {
+                document.write(numero+"<br>")
+                contador++;
+            }
+            numero++;
+        }
+    </script>
+     -->
+    <!--  
+    
+    hacer una pagina web que te pida dos numeros y te mostrara los 
+    numeros pares que hay entre el menor y el mayor 
+
+       1. comprobar que el primero es un numero
+       2. comprobar que el segundo es un numero 
+       3. invertir el orden de ser necesarios  
+       4. mostrar los numeros pares 
+    -->  
+    <script>
+
+        let primer_numero, segundo_numero;
+        primer_numero=parseInt(prompt("primer numero "));
+        while (isNaN(primer_numero)) {
+            primer_numero=parseInt(prompt("primer numero "));
+        }
+        segundo_numero=parseInt(prompt("segundo numero numero "));
+        while (isNaN(segundo_numero)) {
+            segundo_numero=parseInt(prompt("segundo numero "));
+        }
+        
+       /*  if (primer_numero<segundo_numero) {
+            while (primer_numero<segundo_numero) {
+                if ((primer_numero%2)==0) {
+                    document.write(primer_numero+"<br>")
+                    
+                }
+            primer_numero++;
+            }
+        }else {
+            while (segundo_numero<primer_numero) {
+                if ((segundo_numero%2)==0) {
+                    document.write(segundo_numero+"<br>")
+                }
+                segundo_numero++; 
+            }
+        } */
+
+        //Compro que el primero es menor que el segudndo en caso contrio invertimos
+        if (primer_numero>segundo_numero) {
+            let aux;
+            aux=primer_numero;
+            primer_numero=segundo_numero;
+            segundo_numero=aux
+
+        }
+
+        //Mostramos los numeros ñares
+        while (primer_numero<segundo_numero) {
+            if ((primer_numero%2)==0) {
+                document.write(primer_numero+"<br>")
+                    
+            }
+            primer_numero++;
+        }
+
+    </script>
+</body>
+</html>

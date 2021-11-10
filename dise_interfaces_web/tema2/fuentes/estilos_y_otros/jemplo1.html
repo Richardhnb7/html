@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p,h1,li{
+            color: red;
+        }
+        .resto{
+            background-color: pink;
+        }
+        #primero{
+            text-transform: uppercase;
+        }
+    </style>
+    <!-- identificadores el #-->
+</head>
+<body>
+    <!--
+        crea un formulario para introducir nombre, apellid y calle
+        usando etiquetas labeñ e input e introducir cada àreja de label e 
+        input en un div difrente 
+
+        delante delformulario colocar un h1, con el contenido "actividad1"
+        debao del h1 un parrafo con el lorem de 6 palabras.
+
+        al primer div le pondremosun identificador que ssera "primero"
+        al resto de div le pondremos una clase que sera "resto"
+
+        debajo del ultimo div pondremos una lista con tres elmentos, 
+        en uno de lso elemnetos pondremos un p con un lorem de 3 palabras 
+        
+        poner las etiquetas en p y h1 y li en color rojo. "color:red:"" 
+        poner los contenidos de las etiquetas de la clase resto con fondo  rosa
+            background:pinl;
+        
+        poner en mayusculas el contenido de la etiqueta con identificador priemero
+            text-transform: uppercaase
+        todos lobael dentro de una etiqueta de resto que su tamamaño sea mayor 
+    -->
+    <h1>Actividad1</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur.
+    </p>
+    <form action="#">
+        <div id="primero">
+            <label for="nombre">nombre</label>
+            <input id="nombre" type="text">
+        </div>
+        <div class="resto">
+            <label for="apellidos">apellidos</label>
+            <input id="apellidos" type="text">
+        </div>
+        <div class="resto">
+            <label for="direccion">direccion</label>
+            <input id="direccion" type="text">
+        </div>
+        <ol>
+            <li> uno<p>Lorem, ipsum dolor.</p></li>
+            <li>dos</li>
+            <li>tres</li>
+        </ol>
+        <a href="" class="resto">a.resto</a>
+        <a href="" id="segundo">a#segundo</a>
+    </form>
+    
+    
+</body>
+</html>

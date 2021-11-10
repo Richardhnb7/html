@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatenar</title>
+</head>
+<body>
+    <script>
+        let cadena1="hola ";
+        let cadena2="soy ";
+        let cadena3="richard, ";
+        //concatenar
+        cadena= cadena1.concat(cadena2,cadena3);
+        alert(cadena);
+        //repetir
+        document.write(cadena.repeat(5/2));
+        //remplazar
+        document.write(cadena.replace("o","0"));
+
+        document.write(cadena.replace(/o/g,"0"));
+            // con espresiones regulares se cambia todo, sino
+            //solo se cambia la primera
+        //trim quita los espacios dentro de la cadena 
+        cadena1=prompt("di tu nombre");
+        cadena2=prompt("di tu apellido");
+        alert(cadena1+cadena2);
+        alert(cadena1.trim()+cadena2.trim());
+
+        //slice sirve para quedarnos con subcadenas
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+        let tablero=[];
+
+        for(let i=0;i<=5;i++)//lo que se hace dentro de un array meter otro array en esa posicion
+
+            tablero.push(new Array());
+            //tablero[i]=new Array()
+            //tablero[i]=[,,,,,,]
+        
+        for (let i = 0; i <= 5; i++) {
+            for (let j = 0; j <= 5; j++) {
+            //tablero[i][j]=Math.round(Math.random()*10+1)
+            tablero[i][j]=0;
+            }
+        }
+        contador=5;
+        while (contador!=0) {
+            if (!tablero[Math.round(Math.random()*5)][Math.round(Math.random()*5)]) {
+                tablero[Math.round(Math.random()*5)][Math.round(Math.random()*5)]="x";
+                contador--;
+            }            
+        }
+        
+        console.log(tablero);
+        document
+        for (let i = 0; i <= 5; i++) {
+            for (let j = 0; j <= 5; j++) {
+            //tablero[i][j]=Math.round(Math.random()*10+1)
+            document.write(`${tablero[i][j]} `)
+            }
+            document.write(`<br> `)
+        }
+</script>
+</body>
+</html>

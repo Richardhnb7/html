@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //creacion de distintas formas
+        // con el var y const
+        //nombres2[0] para llamar el array en esa posicion
+        let nuevo1;
+        var nombres=["richard",,'daniel',1,'antonio']
+        var nombres2 = new Array('richrad',2,'daniel','antonio')
+        var nuevo=[]//en lace fijo
+        // y no se puede enlazar con otro 
+        document.write(nombres)
+        console.log(nombres)
+        console.log(nombres2);
+        nombres2[0]=true
+        console.log(nombres2[0])
+        nuevo[2]=4
+
+        //funcion para comprobar si es un array:Array.isArray(nuevo);
+
+        // pop- extrae el ultimo elemento del array
+        ultimo=nombres.pop();
+        document.write('<br>'+ultimo)
+        document.write('<br>'+nombres)
+
+        //push- introduce en el array, en la ultima posicion
+        nombres.push("paula");
+        document.write('<br>'+nombres);
+
+        //reverse- da la vuelta al array,lo invierte
+        nombres.reverse();
+        document.write('<br>'+nombres);
+
+        // shift- extraer el primer elemento,
+        nombres.shift()
+        document.write('<br>'+nombres);
+
+        // unshift- introduce el la primera posicion
+        nombres.unshift("paula2")
+        document.write('<br>'+nombres);
+
+        //sort- ordena 
+        nombres.sort()
+        document.write('<br>'+nombres);
+
+        //splice- eliminar elementos existentes o agregar nuevos: 1:posicion ,0:insercion(),"xxxxxxx":lo insertado
+            
+            // // 1: insertas parametros
+            // nombres.splice(3,0,"paula")
+            // document.write('<br>'+nombres);
+            // // 1: inserta y el de la derecha lo borra
+            // nombres.splice(3,1,"paula1")
+            // document.write('<br>'+nombres);
+            // // 2:inserta y los dos de la derecha los borra
+            // nombres.splice(3,2,"otro")
+            // document.write('<br>'+nombres);
+            // //tambien se puede usar negativos en el de la posicion
+            // nombres.splice(0,2)
+            // document.write('<br>'+nombres);
+            // nombres.splice(-2,3)
+            // document.write('<br>'+nombres);
+
+        // concatenar array pero ay que guardarlo
+        nuevo1=nombres.concat(nombres,nombres2)
+        document.write('<br>'+nuevo1);
+
+        //join- todos los elementos de un array los une y los convierte en una cadena
+        nuevo=['h','o','l','a'];
+        cadena=nuevo.join('</td><td>');//lo que hace aqui es sustituir las comas 
+        document.write('<table> <tr><td>'+cadena+'</td></tr></table>')
+        nuevo=['h','o','l','a'];
+        cadena=nuevo.join(''); 
+        document.write(cadena)
+
+        //slice- esto genera un nuevo array que va desde el el primer numero hasta 
+            //el segundo numero dicho
+        nuevo_nombres=nombres.slice(0,4)
+        document.write('<br>'+nuevo_nombres)
+
+        //indexof- buscar elementos sino esta el elemento devuelve -1, empieza a buscar desde la i
+        document.write("<br> se encuentra en la posicion: "+nombres.indexOf("richard"))
+
+        //includes devuelve verdadero o falso si el elmento esta dentro el array
+        document.write("<br> la palabra esta: "+nombres.includes("richard"))
+
+</script>
+</body>
+</html>

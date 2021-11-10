@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--realizar un pagian web donde dispondremos de un formulario
+    con un label y un imput para introducir un nombre tambien de un
+    campo desplegable <select> donde podremosseleccionar un 
+    numero del 1 al 78, este se debe gnerar por codigo javascript,
+    poner tamiensu label
+    usar for
+    -->
+    <form action="">
+        <label for="nombre">nombre</label>
+        <input id="nombre" type="text">
+        
+        <label for="numero">selecciona un numero:</label>
+        <select name="numero" id="numero">
+        
+            <script>
+                for (let n = 1; n <= 78; n=n+2) // se
+                    document.write(`<option value='value${n}'> ${n} </option>`);
+                    
+                
+                    
+            </script>
+        </select>
+    </form>
+</body>
+</html>

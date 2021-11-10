@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejerccico resuelto </title>
+</head>
+<body>
+    <script>
+        let nviejo= -1,nnuevo=0,cont=0,suma=0;
+        alert("empieza ");
+        console.log(`nviejo ${nviejo} nnuevo ${nnuevo} `);
+        while (nnuevo>nviejo) {//comparacion 
+            nviejo=nnuevo;
+            nnuevo=parseInt(prompt("dame un numero mayor al anterior, para acabar introduce un numero menor"));
+            while (isNaN(nnuevo)) {//si es una cadna introducir de nuevo
+                nnuevo=parseInt(prompt("dame un numero no una cadena"));
+            }
+            console.log(`nviejo ${nviejo} nnuevo ${nnuevo}, contador ${cont}`);//pver los datos en consola 
+            cont++;
+            suma+=nnuevo;
+        }
+        document.write(`el numero total introducido ${cont} y la suma ersultante es ${suma}`);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+1.
+hacer un progrma que este pidiendo nombres de alumnos mientras no se teclee fin
+debe aparecr los nombres de los alumnosen una lista ordenada
+utilizar WHILE
+
+document write
+
+2.
+hacer un programa que cree una tabla 
+en la cabezera estaran los nombres de ñas asignaturas
+en las filasel nombre del alumno y las notas de cada asignatura  su media 
+los datos seran introducidos por teclado, para terminar de rellenar una fila 
+se debe teclear fin
+utilizar WHILE
+
+
+3.
+igual que el anteriior pero debe aparecer la media de cada alumno
+utilizar WHILE

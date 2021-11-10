@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        raliza  una web con formulariodonde puedas introducir tu nombre y una ciudad
+        seleccionala de las siguientes: yecla, jumilla, caudete que estaran dento de 
+        un array-hacer con las tres opcciones de bucle for 
+
+    -->
+    <form action="">
+        <label for="nombre">nombre</label>
+        <input type="text">
+        <select name="ciudad" id="">
+        
+            <script>
+                
+                let ciudad=["caudete", "yecla", "jumilla"];
+                for (let i = 0; i < ciudad.length; i++) 
+                    document.write(`<option value="ciudad"> ${ciudad[i]} </option>`);
+            </script>
+            <input type="submit">
+        </select>
+    </form>
+</body>
+</html>

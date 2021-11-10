@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        enunciado del ejercicio
+        Un prgograma que pida teres cadenas buscara en la primera
+        la seguna y cuando la encuentre la cambiara por la tercera
+        poder utilzar el replace no el otro
+    -->
+    <script>
+        let cad_Ini="hola soy yo el soy de yo";
+        let cad_busqueda ="yo";
+        let cad_remplazo="tu";
+        while (cad_Ini.lastIndexOf(cad_busqueda)>0) {
+            //aqui lo que hace es remplazar reemplazar
+            //mientras en la cadena inicial 
+            cad_Ini=cad_Ini.replace(cad_busqueda,cad_remplazo)
+        }
+        
+        document.write(cad_Ini)
+
+    </script>
+</body>
+</html>

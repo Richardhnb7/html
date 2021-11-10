@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid red;
+            text-align: justify;
+        }
+        div.vertical{
+            border: 1px solid red;
+            vertical-align: middle;
+            height: 5em;
+        }
+        p.der{
+
+            text-indent: 15px;
+            letter-spacing: 10px;
+            word-spacing: 30px;
+        }
+        p.iz{
+
+            text-indent: -20px;
+            letter-spacing: -5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--
+        alineacion horizontal
+        creear una caja con un div con un borde de 1px solid red
+        en su interior debe tenr el siguiente texto:
+            hola soy yo 
+        debe aparecer alineadi a la derecha. Propiedad text-aling
+        
+    -->
+    <div>
+        
+        Lorem ipsum lorem4<br> dolor Lorem ipsum dolor sit.<br> sit amet.
+        hola soy yo 
+        
+    </div>
+    <!--
+        alineacion vertiacal
+        crea otro div de la clase vertical con el texto: hola soy yo, y que aparezaca
+        propiedad vertical-align, valor middle
+        
+        tiene muchos problemas de compatibilidad asi que no hace falta usarlo 
+    -->
+    <div class="vertical">
+        <p >
+        
+            Lorem ipsum lorem4<br> dolor Lorem ipsum dolor sit.<br> sit amet.
+            hola soy yo 
+            
+        </p>
+    </div>
+    <!--
+        crear un p  con clase=der,con el texto "estoy indentado a la derecha 15px", utlizar la propiedad 
+        text-indent. con valor positivo, a la derecha
+
+        crear otro p con la clase iz que este indentado 20 px a la izquieda
+        hacer que las letras dde las palabras del p con clase der, esten separadas 10px
+        usas propiedad letter-spacing
+
+        hacer que las letras de las palabras del p con clase der, esten separadas 10px
+        usas propiedad letter-spacing
+
+        serparar las palabras 5 px propiedad: word-spacing
+    -->
+    <p class="der">
+        estoy indentado a la derecha 15px
+    </p>
+    <p >
+       el texto normal, estoy indentado a la derecha 15px
+    </p>
+    <p class="iz">
+        estoy indentado a la derecha 15px
+    </p>
+    <!--
+
+    -->
+    
+</body>
+</html>

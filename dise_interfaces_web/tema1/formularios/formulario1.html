@@ -1,0 +1,99 @@
+<!--
+Hacer un formulario que nos pida nuestro nombre, fecha de nacimiento, telefono 
+ciudad entre yecla jumilla almansa y caudete, el deporte favorito, horas practicadas 
+y deportista favorito 
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><!--si no se sabe donde enviar poner "#"-->
+    <form action="#" method="GET">
+        <fieldset name="datos personales">
+            <legend> Datos personales</legend><!--sirve para agrupar sin la necesidada del div, 
+            y el legend le da nombre a fieldset-->
+            <p>
+                <label for="Nombre">Nombre</label>
+                <input required="true" placeholder="introduce el nombrre " id="Nombre" type="text" >
+                <!-- placeholder sirve para poner dentro del recuadro un mensaje
+                requiered sirve para poner obligatorio ese campo, no te deja enviarel formulario-->
+            </p>
+            <p>
+                <label for="Fecha_nacimiento">Fecha nacimiento</label>
+                <input disabled="true" id="Fecha_nacimiento" type="date">
+                <!--disable sirve para bloquear un-->
+            </p>
+            <p>
+                <label for="Telefono">Telefono</label>
+                <input autofocus id="Telefono" pattern="[0-9]{9}" type="tel"><!--para telefonos
+                autofocus sirve para la primera que se marque por deefecto
+                paatern es praa poner un codigo-->
+            </p>
+            <p>
+                <label for="ciudades">Ciudad</label>
+                <select name="ciudad" id="ciudad">
+                    <optgroup label="Opciones">
+                        <option value="1">Yecla</option>
+                        <option value="2">Jumilla</option>
+                        <option value="3">Almansa</option>
+                        <option value="4">Caudete</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <input type="file" multiple>
+                <!--sirve paraexaminar ficheros , multiple para selecionar varios ficheros, 
+                    si esa opccion solo te deja seleccionar 1 fichero -->
+
+            </p>
+            <p>
+                <input type="email" name="correo" id="">
+                <!--psrs introduccir un correo, valida dir4ctamente la informacion que se pasa
+                lo mismo pasas con la opccion de url
+                -->
+            </p>
+        </fieldset>
+        <fieldset>
+            <p>
+                <label for="DeporteFavorito">Deporte Favorito</label>
+                <input id="DeporteFavorito" maxlength="10" type="text">
+                <!--maxlength es para limitar los caracteres de la cadena -->
+            </p>
+            <p>
+                <label for="HPracticadas">Horas practicadas</label>
+                <input min="" max="10" step="2" id="HPracticadas" type="number" >
+                <!-- va de dos en dos y te pone un maximo y un minimo-->
+            </p>
+            <p>
+                <label for="depFav">deportista favorito</label>
+                <input id="depFav" type="text" >
+            </p>    
+            <!--sirve apara poner un texto largo descriptivo-->
+            <label for="descripccion"> Informacion del deportita</label>
+            <p>
+                <textarea name="descripccion" id="" cols="30" rows="1">
+                </textarea>
+            </p>   
+            <p>
+                <label for="buscad">buscar deporte</label>
+                <input type="search" id="buscad">
+                        <!-- sirve para buscar-->
+            </p> 
+            <p>
+                <label for="clave">Clave</label>
+                <input type="password" id="clave">
+                <!--sive para introducir las claves -->
+            </p>
+        </fieldset>
+
+        <input type="submit" value="Enviar datos" name="" id="">
+        <!--
+
+        -->
+    </form>
+</body>
+</html>

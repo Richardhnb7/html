@@ -1,0 +1,28 @@
+Dado un array de enteros y un array con las posiciones. Realizar
+ una función que me desplaze el array de enteros, a partir de las 
+ posiciones del array. Los huecos generados se pondrá un cero
+
+
+
+array de enteros 23 4 10 12 3 45 9
+
+
+posiciones 3,5,2
+
+
+
+primer desplazamiento sería:
+23 4 10 0 12 3 45 9
+
+el segundo desplazamiento
+
+23 4 10 0 12 0 3 45 9
+
+
+el tercer desplazamiento
+
+23 4 0 10 0 12 0 3 45 9
+
+
+
+EL EJERCICIO ESTA HECHO DENTRO DE FUNCIONES.PHP COMO DESPLAZAMIENTO A LA DERECHA

@@ -1,0 +1,5 @@
+por un formulario almacenar personas dentro de un array
+introducir personas dentro de un array, 
+atributos 
+dni, nombre y apellido
+cada persona es guardada dentro de un array 
