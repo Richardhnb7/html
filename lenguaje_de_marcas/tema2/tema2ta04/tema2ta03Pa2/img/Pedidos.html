@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Pedidos_files/estiloformu.css" rel="stylesheet" type="text/css">
+    <title>Pedidos</title>
+    <style>
+        img{
+            background-image: url(/img/fondo.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        <p> <img src="/img/mantenimeinto.jpg" alt="manteniemiento"></p>
+    -->
+
+    <h2>Formulario de Pedidos</h2>
+
+    <form action="#">
+        <fieldset name="datos personales ">
+            <legend> Datos de envío</legend>
+            <p>
+                <label for="Nombre">Nombre:</label>
+                <br>
+                <input required="true" placeholder="introduce tu Nombre " id="Nombre" type="text">
+
+            </p>
+            <p>
+                <label for="Apellido">Apellidos:</label>
+                <br>
+                <input required="true" placeholder="introduce tu Apellido " id="Apellido" type="text">
+
+            </p>
+            <p>
+                <label for="Telefono">Teléfono:</label>
+                <br>
+                <input autofocus="" id="Telefono" placeholder="introduce tu Numero de Telefono " pattern="[0-9]{9}" type="tel">
+            </p>
+            <p>
+                <label for="codigoPostal">Código Postal:</label>
+                <br>
+                <input id="codigoPostal" placeholder="introduce tu Codigo Postal " type="text">
+            </p>
+            <p>
+                <label for="direccion">Dirección:</label>
+                <br>
+                <input id="direccion" placeholder="introduce tu Dirección" type="text">
+            </p>
+
+        </fieldset>
+
+        <fieldset class="p">
+            <legend>Datos de cuenta:</legend>
+
+            <!--
+               <p>
+                <label for="correo">Correo:</label>
+                <br>
+                <input type="email" name="correo" id="correo">
+            </p>
+            <p>
+                <label for="contraseña">Contraseña:</label>
+                <br>
+                <input type="password" id="contraseña" name="contraseña" >
+            </p>
+            <p>
+                <label for="NombreU">Nombre de usuario:</label>
+                <br>
+                <input required="true" placeholder="introduce tu nombre de usuario " id="NombreU" type="text">
+    
+            </p>
+            <p>
+                <label for="imagen">Introduce tu imagen e usuario:</label>
+                <input type="file" id="imagen">
+            </p>
+           -->
+
+            <p>
+                Selecciona los libros que deseas:
+                <br>
+                <input type="checkbox" id="1" name="libro1" checked="checked">
+                <label for="1">Cancion de juego y hielo</label>
+                <br>
+                <input type="checkbox" id="2" name="libro2" checked="checked">
+                <label for="2">El nombre del viento</label>
+                <br>
+                <input type="checkbox" id="3" name="libro3" checked="checked">
+                <label for="3">El camino de los reyes</label>
+                <br>
+                <input type="checkbox" id="4" name="libro4" checked="checked">
+                <label for="4">Juramentada</label>
+                <br>
+
+            </p>
+            <p> 
+                Metodo de pago:
+                <br>
+                <input type="radio" id="pa" name="paypal">
+                <label for="pa">Paypal</label><br>
+
+                <input type="radio" id="tc" name="tCredito" checked="checked">
+                <label for="tc">Tarjeta de crédito</label><br>
+
+
+            </p>
+
+
+        </fieldset>
+        <p class="botones">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </p>
+    </form>
+    <br>
+    <p class="enlace">
+        <a href="http://127.0.0.1:5501/PagPrincipal.html">volver a la pagina principal</a>
+        <br>
+    </p>
+    <footer>Pagina creada por Richard Nenjer Bahamonde</footer>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

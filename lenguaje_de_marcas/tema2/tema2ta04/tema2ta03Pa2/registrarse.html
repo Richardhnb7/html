@@ -1,32 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/estiloformu.css" rel="stylesheet" type="text/css">
     <title>Registro</title>
     <style>
-        img {
-            width: 100%;
-        }
-    
-        footer {
-            background-color: #494844;
+        h2{
             color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0%;
-            text-align: center;
-    
+        }
+        body{
+            background-image: url(/img/fondo2.jpg);
+            background-repeat:no-repeat;
+            background-position:center;
+            background-attachment: fixed;
+        }
+        .enlace{
+            background-color: rgb(231, 204, 168,0.7);
+            border-radius: 1em;
+            padding: 0.5% ;
         }
     </style>
 </head>
+
 <body>
-    <p> <img src="/img/mantenimeinto.jpg" alt="manteniemiento"></p>
-    <p>
-        <a href="http://127.0.0.1:5500/PagPrincipal.html">volver a la pagina principal</a>
+    <!--
+        <p> <img src="/img/mantenimeinto.jpg" alt="manteniemiento"></p>
+    -->
+  
+    <h2>   Formulario de Registro</h2>
+    <form action="#">
+        <fieldset name="datos personales ">
+            <legend> Datos personales</legend>
+            <p>
+                <label for="Nombre">Nombre:</label>
+                <br>
+                <input required="true" placeholder="introduce tu Nombre " id="Nombre" type="text">
+
+            </p>
+            <p>
+                <label for="Apellido">Apellido:</label>
+                <br>
+                <input required="true" placeholder="introduce tu Apellido " id="Apellido" type="text">
+
+            </p>
+            <p>
+                <label for="genero">Género:</label>
+                <br>
+                <input type="radio" id="genero" name="hm" value="h"> Hombre
+                <input type="radio" id="genero" name="hm" value="m"> Mujer
+            </p>
+
+            <p>
+                <label for="Fecha_nacimiento">Fecha nacimiento:</label>
+                <br>
+                <input disabled="true" id="Fecha_nacimiento" type="date">
+
+            </p>
+            <p>
+                <label for="Telefono">Teléfono:</label>
+                <br>
+                <input autofocus id="Telefono" placeholder="introduce tu Numero de Telefono " pattern="[0-9]{9}" type="tel">
+            </p>
+            <p>
+                <label for="Pais">Pais de nacimiento: </label>
+                <br>
+                <select name="Pais" id="Pais">
+                    <optgroup label="Opciones">
+                        <option value="1">España</option>
+                        <option value="2">Portugal</option>
+                        <option value="3">Francia</option>
+                        <option value="4">Otros</option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+
+        <fieldset class="p">
+            <legend>Datos de cuenta:</legend>
+
+            <p>
+                <label for="correo">Correo:</label>
+                <br>
+                <input type="email" name="correo" id="correo">
+            </p>
+            <p>
+                <label for="contraseña">Contraseña:</label>
+                <br>
+                <input type="password" id="contraseña" name="contraseña" >
+            </p>
+            <p>
+                <label for="NombreU">Nombre de usuario:</label>
+                <br>
+                <input required="true" placeholder="introduce tu nombre de usuario " id="NombreU" type="text">
+    
+            </p>
+            <p>
+                <label for="imagen">Introduce tu imagen e usuario:</label>
+                <input type="file" id="imagen">
+            </p>
+            <p>
+                <label for="gf">Genero favorito: </label>
+                <br>
+                <select name="gf" id="gf" >
+                    <optgroup label="Opciones">
+                        <option value="1">Poesía</option>
+                        <option value="2">Fantasía</option>
+                        <option value="3">Romantico</option>
+                        <option value="4">Otros</option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+        <p class="botones">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </p>
+    </form>
+    <br>
+    <p class="enlace">
+        <a href="http://127.0.0.1:5501/PagPrincipal.html">volver a la pagina principal</a>
         <br>
     </p>
     <footer>Pagina creada por Richard Nenjer Bahamonde</footer>
 </body>
+
 </html>

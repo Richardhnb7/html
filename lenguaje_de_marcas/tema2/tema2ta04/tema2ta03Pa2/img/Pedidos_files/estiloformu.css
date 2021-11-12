@@ -1,0 +1,72 @@
+body {
+            
+    background-color: antiquewhite;
+    
+}
+legend{
+    text-transform:uppercase;
+    border: 1px solid black;
+    background-color: rgb(177, 145, 115);
+    border-radius:30px ;
+}
+footer {
+    background-color: #494844;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+    text-align: center;
+
+}
+
+
+
+h2{
+    text-align: center;
+   display: flex;
+   flex-direction:column;
+   justify-content: center;
+
+}
+form{
+    width: 100%;
+    position: fixed;
+    display:block;
+    
+}
+fieldset p{
+    
+    width: 80%;
+    position: relative;
+    left: 10%;
+    
+    padding: 1% 1% 1%;
+
+}
+fieldset{
+    border-radius:5% ;
+    position: relative;
+    background-color: rgb(231, 204, 168);
+    width: 25%;
+    left: 21%;
+    
+}
+fieldset.p{
+    position: absolute;
+    background-color: rgb(231, 204, 168);
+    width: 25%;
+    left: 49%;
+    top: 0%;
+}
+
+p.botones{
+    position: relative;
+    width: 9%;
+    top: 60%;
+    left: 45.2%;
+}
+p.enlace{
+    position:fixed;
+    bottom: 5%;
+    text-align: center;
+}

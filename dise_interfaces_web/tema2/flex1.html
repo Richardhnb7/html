@@ -7,20 +7,22 @@
     <title>Do</title>
     <style>
         div.container>div{
-            border: 1px solid black;
             background-color: cornflowerblue;
-            height: 50px;
+            border: 1px solid black;/*
+            height: 50px;*/
         }
         div.container{
             border: 1px solid black;
             background-color: lightgray;
             width: 90%;
-            margin: 0 auto;
-            height: 500px;
             display: flex;
-            /*flex-wrap: wrap;*/
-            flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-evenly;/*sirve para ajustar el contenido  */
+            align-items:center;/*alinee  el strech no se aplica a lso hijos*/
+            align-content: center;
+            flex-wrap: wrap; /*se recoloca para registro l.m*/    
+            flex-direction: row;       
+            margin: 0 auto;
+            height: 300px;        
 
         }
     </style>
@@ -29,11 +31,11 @@
 <body>
     <div class="container">
         <div>
-            <p>gbaerigbire ier egier geakr ikb er</p>
+            <p>1 baerigbire ier egier geak</p>
         </div><div>
-            <p>gbaerigbire ier egier geakr ikb er</p>
+            <p>2 baerigbire ier</p>
         </div><div>
-            <p>gbaerigbire ier egier geakr ikb er</p>
+            <p>3 baerr geakr ikb er</p>
         </div>
     </div>
 </body>

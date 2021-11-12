@@ -17,7 +17,7 @@
             palabras.has(palabra) ? palabras.set(palabra,palabras.get(palabra)+1) : palabras.set(palabra,1);
         }
         document.write(`<table>`)
-        for([clave,valor] of palabras)
+        for([clave,valor] of palabras)//para visualizar el mapa enforma de tabla
             document.write(`<tr><td>${clave}</td><td>${valor}</td></tr>`)
         document.write(`<table>`)
 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            padding: 0.2em;
+            border: 1px solid black;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+
+            justify-content:flex-start;
+            align-items: flex-start;
+            
+            width: 80%;
+            margin: 2px auto;
+            background-color: lightslategray;
+        }
+        .container div{
+            background-color: burlywood;
+        }
+        .container div:nth-child(1){
+            flex-basis: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>uno</div>
+        <div>dos</div>
+        <div>
+            tres
+            <br>este
+            <br>es
+            <br>mayor
+        </div>
+    </div>
+</body>
+</html>
