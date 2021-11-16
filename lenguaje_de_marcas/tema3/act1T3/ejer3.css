@@ -1,0 +1,29 @@
+p::first-line{
+    text-transform: uppercase;
+}
+p:nth-child(odd){
+    color: red;
+}
+p:nth-child(3n){
+    font-family: Garamond, sans-serif ;
+}
+table tr:nth-child(even){
+    background-color: rgb(88, 58, 58);
+    color: white;
+}
+table tr:nth-child(odd){
+    background-color: rgb(111, 148, 76);
+    color: white;
+}
+table tr td:last-of-type{
+    font-weight: bold;
+}
+p::first-letter{
+    text-decoration: 3px solid underline;
+}
+p:nth-child(4n)::after{
+    content:url(/img/fondo.jpg);
+}
+p:nth-child(5){
+    font-style:oblique;
+}

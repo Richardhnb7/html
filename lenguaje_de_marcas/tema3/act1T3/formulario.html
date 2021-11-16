@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ejer2.css" type="text/css">
+</head>
+<body>
+    <h3>Rellena tu CV</h3>
+    <form action="gestion.php">
+        <fieldset>
+        <p>
+            <label for="Nombre">Nombre</label>
+            <br>
+            <input type="text" id="Nombre"required="true" >
+        </p>
+        <p>
+            <label for="Apellidos">Apellidos</label>
+            <br>
+            <input type="text" id="Apellidos" size="40" required="true" >
+        </p>
+
+        </fieldset>
+        
+        <p>
+            <label for="fNa">Fecha de nacimiento</label>
+            <br>
+            <input type="date" name="fecha" id="fNa" required="true">
+        </p>
+        <p>
+            <label for="em">Email</label>
+            <br>
+            <input type="email" id="em" required="true" multiples>
+        </p>
+        <p>
+            <label for="Contraseña">Contraseña</label>
+            <br>
+            <input type="password" id="Contraseña" required="true">
+        </p>
+        <p>
+            <label for="DNI">DNI</label>
+            <br>
+            <input type="text" id="DNI" size="9" required="true">
+        </p>
+        <p>
+            <label for="hm">Sexo</label> 
+            <br>
+            <input type="radio" name="hm" id="hm" value="h" required="true">Hombre
+            <br>
+            <input type="radio" name="hm" id="hm" value="m" required="true">Mujer
+
+        </p>
+        <p >
+            <input class="noMod" type="text" value="CV-LM" disabled>
+        </p>
+        <p>
+            <label class="opci" for="foto">Incluir mi foto</label>
+            <input class="opci" type="file" id="foto">
+        </p>
+        <p>
+            <label for="Activo">Número de años activo</label>
+            <br>
+            <input type="number" id="Activo" max="50"  required="true">
+        </p>
+        <p>
+            <input type="checkbox" id="sus">
+            <label for="sus"  required="true"> Suscribirme al boletin de novedades</label>
+        </p>
+        
+        <input type="submit" value="Guardar cambios">
+        
+        <input type="reset" value="Borrar datos introducidos">
+        
+    </form>
+    br
+</body>
+</html>

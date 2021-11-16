@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const palabras=['Ñu','Águila','boa','oso','mariposa','Nutria'];
+
+        function ordenTamaño(a,b) {
+            return a.length-b.length//sort se encargara de pasarle los parametros
+        }
+        function ordenAlphaEs (a,b) {
+            return a.localeCompare(b,'es')//si lo que hay en la a es mas pequeño que la b dara negativo
+        }//no tiene en cuenta las mayus
+        //palabras.sort(ordenTamaño);
+        palabras.sort((a,b)=>a.length-b.length);
+        console.log(palabras);
+
+        palabras.sort(ordenAlphaEs);
+        console.log(palabras)
+
+
+        const notas=[5,,7,,8,,10];
+        notas.forEach((notas,i)=> {//
+            console.log(`la nota de la posicion ${i} es ${notas}`)
+            
+        })
+        function mostrar(n,i) {
+            console.log(`la nota de la posicion ${i} es ${n}`)
+        }
+        notas.forEach(mostrar);
+
+        const conjunto=new Set();
+        conjunto.add("pep").add("petp").add("perp").add("pepa")
+        conjunto.forEach(v=>{
+            console.log(v)
+        })
+    </script>
+</body>
+</html>
