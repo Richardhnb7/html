@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            padding: 0.2em;
+             border: 1px solid black;
+        }
+        .container{
+            display: flex;
+            width: 90%;
+            min-width: 600px;
+            height: 200px;
+            /*Establece el eje principal*/
+            flex-direction: row;
+            /*Alinea en el eje principal*/
+            justify-content:flex-start;  
+            /*Alinea en el eje secundario*/
+            align-items:flex-start;   
+            margin: 2px auto;
+            background-color: aliceblue;
+        }
+
+
+        .container div{
+            background-color: burlywood;
+        }
+        .container div:nth-child(1){
+            background-color: burlywood;
+            flex-basis: 40%;
+        }
+        .container div:nth-child(2){
+            background-color: burlywood;
+            flex-basis: 40%;
+        }
+        .container div:nth-child(3){
+            background-color: burlywood;
+            flex-basis: 70%;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>Uno</div>
+        <div>Dos</div>
+        <div>Tres
+            <br>Este
+            <br>Es 
+            <br>Mayor
+        </div>
+    </div>
+</body>
+</html>

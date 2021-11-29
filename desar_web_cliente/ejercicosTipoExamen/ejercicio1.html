@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejercicio sencillo 1 arrays. Mayor, Menor y Media</h1>
+    <p>introduce los enteros separados por comas.</p>
+    <p><input id="cadena" type="text" value=""> <button id="cargar">cargar datos</button></p>
+    <p><button id="calcular"> calcular</button><button id="borrar">borrar input</button></p>
+     
+    <p id="suma"></p>
+    <p id="media"></p>
+    <p id="mayor"></p>
+    <p id="menor"></p>
+
+    <script>
+        let cadena=document.getElementById('cadena')
+        let cargar=document.getElementById('cargar')
+        let calcular=document.getElementById('calcular')
+        let borrar=document.getElementById('borrar')
+        let suma=document.getElementById('suma')
+        let madia=document.getElementById('media')
+        let mayor=document.getElementById('mayor')
+        let menor=document.getElementById('menor')
+
+
+        function su(array) {
+            let suma=0;
+            for(i in array){
+                suma+=parseInt(array[i])
+            }
+            return suma;
+        }
+
+        function fmedia(array) {
+            let cantNumeros=array.length;
+            let sum= su(array);
+            return sum/cantNumeros;
+        }
+        function fmayor(array) {
+            let numMay=0;
+            for( i in array ){
+                if (array[i]>numMay) {
+                    numMay=array[i]
+                }
+            }
+            return numMay;
+        }
+        function fmenor(array) {
+            let numMen=100000;
+            for( i in array ){
+                if (array[i]<numMen) {
+                    numMen=array[i]
+                }
+            }
+            return numMen;
+        }
+
+        cargar.addEventListener('click',()=>{
+            array=(cadena.value.split(','))
+            
+        })
+        calcular.addEventListener('click', () => {
+            suma.innerHTML = `la suma es ${su(array)}`;
+        })
+        calcular.addEventListener('click', () => {
+            media.innerHTML = `la media es ${fmedia(array)}`;
+        })
+        calcular.addEventListener('click', () => {
+            mayor.innerHTML = `el mayor es ${fmayor(array)}`;
+        })
+        calcular.addEventListener('click', () => {
+            menor.innerHTML = `el menor es ${fmenor(array)}`;
+        })
+        borrar.addEventListener('click', () => {
+            document.getElementById('cadena').value('')
+        })
+    </script>
+    
+</body>
+</html>

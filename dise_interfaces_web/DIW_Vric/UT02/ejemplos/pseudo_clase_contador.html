@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            counter-reset: cuenta-parrafos;
+        }
+        p.chica::before{
+            content: counter(cuenta-parrafos)" :))";
+            counter-increment: cuenta-parrafos;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>La chica de ayer</h1>
+    <p class="chica">Un día cualquiera no sabes qué hora es</p>
+    <p class="chica">Te acuestas a mi lado sin saber por qué</p>
+    <p class="chica"> Las calles mojadas te han visto crecer</p>
+    <p class="chica">Y tú, en tu corazón estás llorando otra vez</p>
+    
+    
+   
+    
+    
+</body>
+</html>

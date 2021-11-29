@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*establecer un filtro*/
+        const notas=[4,,5,,65,34,,,,3];
+
+        const notas_mayor_5=notas.filter(x=>x>5);
+        console.log(notas_mayor_5);
+        /*
+        devolder los elementos del array que sean pares
+
+        formas de hacerlo
+        */
+       const notas_pares=notas.filter(x=>x%2==0)
+       console.log(notas_pares)
+       console.log(notas.filter(x=>!(x%2)))
+
+       //expresiones regulares
+       let eh=/^[0-9]{3}[a-z]{2,4}$/;//para que empieze de esta forma 
+       console.log( eh.test('0123ak'))
+       /*con el siguiente array, crear uno nuevo donde no apaezcan
+       elementos que tengan una mayuscula al princippio 
+       si aparece en otro lugar no sera valido
+       */
+       const nombres=['Daniel','Amaro','TanIa','flipao'];
+       console.log(nombres.filter(x=>{
+          let er= /^[A-Z][a-z]{1,}$/
+
+          return er.test(x)
+       }))
+       console.log(nombres.filter(x=> /^[A-Z][a-z]{1,}$/.test(x)))
+
+          
+    </script>
+</body>
+</html>

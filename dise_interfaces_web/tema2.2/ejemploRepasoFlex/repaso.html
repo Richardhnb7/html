@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        body{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            
+        }/*no usar margenes para lo que no sea el contenedor*/
+        .contenedor{
+            background-color: rgb(233, 108, 129);
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            width: 80%;
+            height: 450px;
+
+        }
+        .primero{
+            background-color: rgba(172, 58, 58,0.5);
+            
+        }
+        .segundo{
+            background-color: rgba(106, 176, 179,0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around ;/*es el principal*/
+
+       
+        }
+        .tercero{
+            background-color:rgba(207, 193, 193,0.5);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;/*con los mismos espacios*/
+    
+        }
+        .primero, .segundo,.tercero{
+            width: 100%;
+            height: 150px;
+            border: 1px solid white
+        }
+        h2{
+            border: 1px solid white;
+        } 
+        @media all and (min-width:500px){
+            .primero{
+                order: 3;
+            }
+        }
+        @media all and (min-width:600px){
+            .primero{
+                order: 0;
+            }
+            .segundo{
+            flex-direction: row;
+            align-items: center;
+            justify-content:flex-end;
+            }
+            .tercero{
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+    
+            }
+        }
+        @media all and (min-width:700px){
+            
+            .segundo{
+            flex-grow: 2;
+            justify-content: space-evenly;
+            }
+            .segundo,.tercero{
+                flex-basis: 0;
+                height: 300px;
+            }
+            .tercero{
+        
+                flex-grow: 1;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="primero">
+            <h1>UNO</h1>
+        </div>
+        <div class="segundo">
+            <h2>DOS</h2>
+            <h2>TRES</h2>
+        </div>
+        <div class="tercero">
+            <h2>CUATRO</h2>
+            <h2>CINCO</h2>
+        </div>
+    </div>
+</body>
+
+</html>

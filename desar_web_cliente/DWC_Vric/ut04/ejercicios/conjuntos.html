@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const conjunto=new Set();
+        
+        conjunto.add('pepe');
+        conjunto.add('juan');
+        conjunto.add('paco').add('andres')
+        
+        console.log(conjunto);
+
+        const lista=new Set([1,2,3,4,5,6,7]);
+        console.log(lista);
+
+        const lista2=new Set("Conjunto");
+        console.log(lista2)
+        console.log(`El tama´ño de lista2 es ${lista2.size}`)
+        // Para eliminar hay que saber cual es el elemento.
+
+        lista.delete(4);
+        console.log(lista)
+        
+        //Saber si hay un elemento.
+         console.log(lista.has(1))
+         console.log(lista.has(4))
+
+        //convetir una lista en un array
+         const array=[...lista];
+         
+         console.log(array)
+
+         //Recorrer un conjunto.
+
+         for (let numero of lista)
+            console.log(numero)
+
+
+
+    </script>
+</body>
+</html>

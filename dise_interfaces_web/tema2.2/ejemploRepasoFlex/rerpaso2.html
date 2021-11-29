@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lightskyblue;
+        }
+
+        .contenedor { 
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            margin: 2em auto 2em;
+        }
+        .imagen,.titulo,.cuerpo,footer {
+            width: 100%;
+        }
+        .imagen {
+            display: flex;
+            flex-direction: column;
+        }
+        .titulo{
+            margin-top: 0.5rem;
+            background-color: rgb(89, 156, 182);
+        }
+        .titulo h1 {
+            margin: 1rem 1rem 1rem 1rem;
+            text-align: center;
+        } 
+        .cuerpo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }  
+        .cuerpo div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 1em;
+        } 
+        input,label {
+            width: 100%;
+            
+        }
+        input{
+            margin: 0.5em 0em 0.5em 0em;
+        }
+        footer{
+            background-color: rgb(97, 146, 148);
+
+        }
+        footer h2{
+            text-align: center;
+            margin: 1rem
+        }
+       
+        
+
+        @media all and (min-width:500px) {
+            input{
+                width: 70%;
+            }
+            label{
+                width: 25%;
+                margin: 0.5em 0em 0.5em 0em;
+            }
+            .cuerpo div {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding: 1em;
+            }
+        }
+        @media all and (min-width:700px) {
+            input{
+                width: 32%;
+            }
+            label{
+                width: 14%;
+                color: red;   
+            }
+            .cuerpo div {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="imagen">
+            <img src="/img/pngtree-abstract-modern-neon-frame-background-image_339537.jpg" alt="">
+        </div>
+        <div class="titulo">
+            <h1>El camino de los reyes</h1>
+        </div>
+        <div class="cuerpo">
+            <div>
+                <label for="nombre">Nombre:</label><input id="nombre" type="text">
+                <label for="apellido">Apellido:</label><input id="apellido" type="text">
+                <label for="ciudad">Ciudad:</label><input id="ciudad" type="text">
+                <label for="clave">Clave:</label><input id="clave" type="text">
+
+            </div>
+            <div>
+                <button> Enviar</button>
+            </div>
+            
+        </div>
+        <footer> <h2> Richard Nenjer</h2></footer>
+
+    </div>
+
+</body>
+
+</html>

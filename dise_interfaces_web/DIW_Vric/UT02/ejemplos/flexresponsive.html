@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.contenedor{
+            border: 1px solid;
+            overflow:hidden;
+            flex-wrap: wrap;
+            padding: 5px;
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+        }
+        .info{
+            width: 24%;
+        }
+        @media(max-width: 500px){
+            .info{
+                width: 44%;
+            }
+        }
+
+        @media(max-width: 300px){
+            .info{
+                width: 90%;
+            }
+        }
+        
+        label,input{
+            width: 100px;
+            float: left;
+           
+        }
+        div.info input{
+            margin-right: 10px;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+            <div class="info">
+                <label for="">Nombre</label>
+                <input type="text">
+            </div>
+            <div class="info">
+                <label for="">Apellido1</label>
+                <input type="text">
+            </div>
+            <div class="info">
+                <label for="">apellido2</label>
+                <input type="text">
+            </div>
+            <div class="info">
+                <label for="">Ciduad</label>
+                <input type="text">
+            </div>
+            <div class="info">
+                <label for="">CP</label>
+                <input type="text">
+            </div>
+            <div class="info">
+                <label for="">Provincia</label>
+                <input type="text">
+            </div>
+            <div class="info">
+                <label for="">Dirección</label>
+                <input type="text">
+            </div>
+            <div class="info">
+                <label for="">Numero</label>
+                <input type="text">
+            </div>
+            <div class="info">
+                <label for="">CP</label>
+                <input type="text">
+            </div>
+            <div class="info">
+                <label for="">Provincia</label>
+                <input type="text">
+            </div>
+            <div class="info">
+                <label for="">Dirección</label>
+                <input type="text">
+            </div>
+            <div class="info">
+                <label for="">Numero</label>
+                <input type="text">
+            </div>
+    </div>
+    
+</body>
+</html>

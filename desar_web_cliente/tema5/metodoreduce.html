@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Reduce:
+        devuelve un valor al final, tendremos dos variable 
+        la primera el valor actual y la otra el acumulado
+        recore y permite ir manejado 
+        lo que hace es lo segundo lo que procesa el dato y primero acumula
+         */
+        const notas=[1,3,4,1,6];
+
+        let media=notas.reduce((a,b)=>a+b,10);
+        console.log(media/notas.length);
+        /*sacar la suma de los valore pares*/
+        let suma=notas.reduce((acumulado,valor)=>{
+            console.log('*',valor,' ',acumulado)
+            if (valor%2==0) {
+                
+                acumulado=acumulado+valor;
+            }
+            return acumulado
+        },10)
+        console.log(suma)
+
+        const nombres=['Richard','Daniel','Ines','Amparo']
+        let lista=nombres.reduce((acum,nombres,i)=>acum+ `<li>${i}${nombres} </li>`,"")
+        document.write('<ul>'+nombres.reduce((acum,nombres)=>acum+ `<li> ${nombres} </li>`,"")+'</ul>')
+        // reduce((a,b)=>a+b+" ","") )
+        lista=`<ul>`+lista+`</ul>`;
+        document.write(lista)
+    </script>
+</body>
+</html>

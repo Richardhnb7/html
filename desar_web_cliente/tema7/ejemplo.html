@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="s1">
+        <h1>titulo</h1>
+        <p>
+            su casas bordeando la autopidta 
+            hizo que ella creciera muy deprisa
+        </p>
+
+    </section>
+    <section id="s2">
+        <p id="i1">
+            su casas bordeando la autopidta 
+            hizo que ella creciera muy deprisa
+        </p>
+        
+    </section>
+    <ul>
+        <li class="verdura">Tomate</li>
+        <li class="carne">tofu</li>
+        <li class="hidrato">lechuga</li>
+        <li class="verdura">lechuga</li>
+        <li class="carne">tofu</li>
+        <li class="hidrato">lechuga</li>
+        
+    </ul>
+    <button>
+        aqui
+    </button>
+    <script>
+        //selector por etiquetas
+        let h1=document.getElementsByTagName('h1');
+              
+        let p=document.getElementsByTagName('p');
+        let boton=document.getElementsByTagName('button');
+        let arrayBotones=[,,,boton]
+        console.log(boton);
+        console.log(arrayBotones)
+
+        boton[0].addEventListener('click',()=>{
+            /* h1[0].innerHTML="otro";
+             for (e of p)
+                e.innerHTML="esto es lo mismo";
+
+            for(e of hidrato)
+            e.innerHTML="siempre es lo imsmo"*/
+            for (e of primerli){
+                e.innerHTML="siempre es lo mismo"
+            }
+        })
+
+        //selectro clases
+        let hidrato=document.getElementsByClassName('hidrato');
+
+        //selector por css
+        let primerli=document.querySelectorAll('ul li:first-child');
+        
+        //selector con id
+        let pConIl=document.getElementById('i1');
+        //querySelector('clase css')
+    </script>
+</body>
+</html>

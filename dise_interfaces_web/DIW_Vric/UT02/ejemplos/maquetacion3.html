@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        div.comun{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            z-index: 2;
+        }
+        div#contenedor{
+            position: absolute;
+            background-color: pink;
+            width: 300px;
+            height: 300px;
+        }
+        div#supder{
+            background-color: red;
+            top: 5px;
+            left:245px;
+        }
+        div#supizq{
+            top: 5px;
+            left: 5px;
+            background-color: yellow;
+
+        }
+        div#infder{
+            background-color: aqua;
+            left:245px;
+            bottom: 5px;
+        }
+        div#infizq{
+            background-color: rgb(21, 175, 46);
+            top:245px;
+            left:5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Otro ejemplo</h1>
+    <div id="contenedor">
+        <p>Estos cuadardos estan colocados en distintas posociones</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ex consequuntur tempora ipsam ad ratione et est asperiores mollitia, incidunt consequatur ullam alias molestias pariatur magni, deserunt distinctio eum excepturi odio enim qui dolore harum necessitatibus. Consectetur, laudantium incidunt nihil sit cumque reiciendis eum vitae expedita molestias accusantium modi rem adipisci, consequuntur aliquam ab quaerat consequatur commodi doloremque neque nemo earum distinctio! Vero asper</p>
+       <div class="comun" id="supder">
+            Uno
+        </div>
+        <div class="comun" id="supizq">
+            dos
+        </div>
+        <div class="comun" id="infder">
+            tres
+        </div>
+        <div class="comun" id="infizq">
+            cuatro
+        </div> 
+    </div>
+    
+</body>
+</html>

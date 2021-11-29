@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cadena=`Su casa bordeando la autopista Su casa bordeando la autopista todo`
+        let arrayPalabras=cadena.split(' ');
+        console.log(arrayPalabras)
+        function array2d(x,y){
+            let a=[];
+            while(a.length<x){
+                let b=[];
+                for(;b.length<y;){
+                    b.push(undefined);   
+                }
+                a.push(b);
+            }
+            return a
+        }
+        console.log(array2d(2,6))
+    </script>
+</body>
+</html>

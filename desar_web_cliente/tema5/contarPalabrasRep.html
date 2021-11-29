@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        de un texto,decir cuantas palabras hay de cada una
+        usar solo un array de dos dimensiones, se debe almacenar
+        toda la informacion en el array 
+    -->
+</head>
+<body>
+    <script>
+        const frase='Todos necesitamos en algún momento de nuestra vida palabras de motivación que nos den el empujón que nos falta para arriesgarnos o así de cliché como va a sonar: empezar de cero.'
+        const arPalabras= frase.split(' ');
+        const setPalabras=new Set(arPalabras);//conjunto de plabaras que no estan repetidas 
+        const tabla=[];
+
+        function cuantas(array,palabra){
+            let cont=0;
+            for(e of array){
+                if (e==palabra) {
+                    cont++;
+                }
+            }
+            return cont;//funcion a la que se le pasa un valor y un array 
+            // y te devuelve la cantidad que aparaece
+        }
+        for (p of setPalabras) {
+            //console.log( 'de la palabra:',p,' hay ',cuantas(arPalabras,p))
+            let columna=[];
+            /*aqui lo que haremos es darle valores a las columnas de la
+            tabla de esta forma creando un array de dos dimensiones
+            conforme vaya recoriendo el array se ira guardando la palabra
+            con sus respectivas repeticiones*/
+            columna[0]=p;
+            columna[1]=cuantas(arPalabras,p);
+            tabla.push(columna)
+        }
+        
+
+        /*function arrayToSet(a){
+            let s=new Set();
+            a.forEach(e => s.add(e));
+            return s;
+        }
+        arrayToSet(arPalabras).forEach(e=>{
+            let columna=[];
+            columna[0]=e;
+            columna[1]=arPalabras.reduce((cuanto,elemento)=>{
+                if (elemento==e) 
+                    cuanto++
+                return cuanto
+            },0);
+            tabla.push(columna)
+        })*/
+
+
+        console.log(tabla)
+        //para crear la tabla dentro de la pagina
+        for (i= 0; i<= tabla.length;i++) {
+            for (j = 0; j <=1; j++) {
+                document.write(tabla[i][j],' ');
+            }
+            document.write('<br>')
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td,tr{
+
+            border: 1px solid black;
+        }
+    </style>
+    <!--
+        hacer una funcion a la que pasemos una array de dos
+        dimensiones y pinte una tabla html
+
+        hacer una funcion a la que se le pase dos valores la fila y la columna , de la tabla, la funcion pintara la celda y 
+        en la celda siempre pondra holas
+
+        pintar una tabala html con una funcion a la que pasamos un array de dos dimendiones 
+
+        hacer una funcion que le pasemos dos cadenas y te devuelva T o F si es o no anagramas 
+    -->
+</head>
+<body>
+    <script>
+        let array=[[2,'dam'],[10,'daw'],[33,"simm"],[21,'asi']]
+
+        let array1=array.length;
+
+        let columnas=3, filas=4;
+
+        function PintaTabla(array1){
+            document.write('<table>')
+            for ([a,b] of array1) {
+                document.write(`<tr><td>${a} </td><td>${b}</td></tr>`)
+            }
+            document.write('</table>')
+        }
+
+        PintaTabla(array)
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const notas=[4,5,,67,34,,,,3]
+
+        const notas_mayor_5=notas.filter(x=>x>5);
+
+        console.log(notas_mayor_5);
+
+        console.log(notas.filter(x=>x%2==0))
+
+        console.log(notas.filter(x=>!(x%2)));
+
+        //Expresiones regulares
+
+        let er=/^[0-9]{3}[a-z]{2,4}$/;
+
+        console.log(er.test('4201ak'))
+
+        //Con el siguiente array, crear uno nuevo array donde solo aparezcan
+        //elementos que tengan una y solo una mayuscula al principio.
+        //Si aparece en otro lugar no será valido.
+
+        nombres=['Daniel','Amaro','TanIa','flipao'];
+
+        console.log(nombres.filter(x=>{
+            let er=/^[A-Z][a-z]{1,}$/
+
+            return er.test(x)
+        }))
+
+        console.log(nombres.filter(x=>/^[A-Z][a-z]{1,}$/.test(x)))
+
+
+    </script>
+</body>
+</html>

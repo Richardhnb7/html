@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Actividad 1</h1>
+    <script>
+        let nviejo=-1,nnuevo=0,cont=0,suma=0;
+        alert("empieza  ")
+        console.log(`nviejo: ${nviejo} y nnuevo: ${nnuevo}`)
+        while (nnuevo>nviejo){
+            nviejo=nnuevo;
+            nnuevo=parseInt(prompt("Introduce un número mayor que el anterior:"))
+            while (isNaN(nnuevo))
+                nnuevo=parseInt(prompt("Introduce un número mayor que el anterior:"))
+            console.log(`nviejo: ${nviejo}, nnuevo: ${nnuevo}, cont: ${cont} y suma: ${suma}`)
+            cont++
+            suma+=nnuevo
+        }
+    </script>
+</body>
+</html>

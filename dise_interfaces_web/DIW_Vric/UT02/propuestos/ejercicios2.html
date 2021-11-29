@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Hacer un web que nos pida un frase y un número  para  encriptar la frase con el metodo 
+        polialfabétcio
+
+        Por ejemplo, con un desplazamiento de 153, la frase Hol soy yo, será de la siguiente forma:
+        H se desplaza 1 caracter.
+        o se desplaza 5 caracteres.
+        l se despalza 3 caracteres.
+        espeacio se desplaza 1 caracter
+        s se desplaza 5 carateres.
+
+        Usar solo cadenas.
+        Es necesario comprobar que se introduce la información correctamente, escribir el resultado
+        en la página y comentar el código.
+        Pista usar charCodeAt.
+    
+    -->
+    <style>
+        .resaltar{
+            color: red;
+            font-weight: bolder;
+        }
+    </style>
+</body>
+    <h1>Ejercicio 2</h1>
+    <script>
+        let cadena,desplazamiento,nueva_Cadena="",i_desplazamiento=0;
+        
+        
+        cadena=prompt("introduce la frase a encriptar:");
+        while (!cadena){
+            cadena=prompt("introduce la frase a encriptar:");
+        }
+        desplazamiento=parseInt(prompt("Introduce el despalzameinto"))  
+        while (isNaN(desplazamiento)){
+            desplazamiento=parseInt(prompt("Introduce el despalzameinto"))  
+        }
+        console.log(`El desplazamiento es ${desplazamiento} y la cadena ${cadena}`)
+
+        
+        for(indice in cadena){
+            /* valor_desplazamiento=parseInt(desplazamiento.toString().charAt(i_desplazamiento));
+            i_desplazamiento++
+            i_desplazamiento=i_desplazamiento% desplazamiento.toString().length;
+            nueva_Cadena+=String.fromCharCode(cadena.charCodeAt(indice)+valor_desplazamiento);
+
+            console.log(`Codigo1: ${cadena.charCodeAt(indice)} Codigo1: ${cadena.charCodeAt(indice)+valor_desplazamiento}`)
+            console.log (`indice: ${indice} valor_desplazamiento: ${valor_desplazamiento} i_desplazamiento: ${i_desplazamiento} nueva_Cadena ${nueva_Cadena}`) */
+
+            nueva_Cadena+=String.fromCharCode(cadena.charCodeAt(indice)+parseInt(desplazamiento.toString().charAt(i_desplazamiento++)));
+            i_desplazamiento%= desplazamiento.toString().length;
+        }
+            
+        
+        console.log(nueva_Cadena)
+
+        document.write(`<p>La codificación de la cadena ${cadena} 
+            es <span class="resaltar">${nueva_Cadena}</span></p>`)
+
+    </script>
+
+</html>

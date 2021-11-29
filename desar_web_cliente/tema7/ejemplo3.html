@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rojo{
+            color: red;
+        }
+        .verde{
+            color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+    <input id="nombre" type="text">
+    <button>Añadir</button>
+    <div class="tablero">
+
+    </div>
+    <script>
+        let palabras=["adios", "bueno","malos","peras","limon"];
+        let nombre = document.getElementById('nombre');
+        let boton = document.getElementsByTagName('button');
+        let tablero = document.getElementsByClassName('tablero')
+
+        const palabra="pomelo";
+        let letra="o";
+
+        /*hacer una funcion que retorna una palabra, se le pasa un array y nnos 
+        devuelve una palabra al hazar*/
+       
+
+        function palabrasAzar(a) {
+           return a[parseInt(Math.random()*a.lenght)];
+        }
+        //hacer una funcion a la que le pasamos una palabra y una letra 
+        //la funcion nos devolvera un array con 0's y 1's donde los unos
+        //estaran en la posicion donde coincida la letra en la palabra 
+        //ejemplo palabara cosas y letras devolvera [0,0,1,0,1]
+
+        /*
+        boton[0].addEventListener('click', () => {
+            tablero[0].innerHTML = `<h1>${UnosCeros('cosas','s')}</h1>`;
+        })
+        */
+        function UnosCeros(pala,letra) {
+            let array=[];
+            for ( letras of pala ) {
+                if (letras==letra) {
+                    array.push('1')
+                }else{
+                    array.push('0')
+                }
+            }
+            return array;
+        }
+
+        /*
+        hacer una funcion ala que le pasamos dos palabras y retorna un arrray donde
+        se compararnlos elementos de la sguiente manera:
+        si el elemento de la posicion n en la primera palbara esta en la possicion 
+        n de la segunda pondra en el array un2  en la posicion n
+        si el elemntode la posicion n en la primera palabta esta en alguna de la 
+        segunda devolvera un  1 en el array en la posicion n
+        */
+        function posiciones(oculta,prueba){ 
+            let solucion=[0,0,0,0,0]
+            for (i in oculta) {
+                if (oculta.includes(prueba[i])) {
+                    solucion[i]=1
+                }
+            }
+            
+            for ( i in oculta) {
+                if (oculta[i]==prueba[i]) {
+                    solucion[i]=2;   
+                }
+            }
+            return solucion    
+        }
+        function unirInfo(palabra,array) {
+            
+        }
+
+
+/* la o esta en cosasa pero no en su posisicion, da 0 porque no esta ahi y un 2 porque es la misma y esta en la misma posicion
+        boton[0].addEventListener('click', () => {
+            tablero[0].innerHTML = `<h1>${posiciones('cosas','oisal')}</h1>`;
+        })*/
+        
+        boton[0].addEventListener('click', () => {
+            tablero[0].innerHTML = `<h1> <span class="rojo">${posiciones('cosas','oisal')}</h1>
+                <span>0</span>
+
+                
+                `;
+        })
+        
+    </script>
+</body>
+
+</html>

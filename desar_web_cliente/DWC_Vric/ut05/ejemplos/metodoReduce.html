@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const notas=[1,3,4,1,6];
+
+        let media=notas.reduce((a,b)=>a+b,10)
+        console.log(media/notas.length)
+
+        //Calcular suma de los valores pares
+
+        let suma=notas.reduce((acumulado,valor)=>{
+            console.log('*',valor,'  ',acumulado)
+            if (valor%2==0){
+                console.log('--',valor,'  ',acumulado)
+                acumulado=acumulado+valor
+            }
+            return acumulado
+        },10)
+
+        console.log(suma)
+
+        const nombres=['Ricardo','Daniel','Antonio','Amparo']
+        document.write('<ul>'+nombres.reduce((acum,nombre,i)=>acum+`<li>${i}${nombre}</li>`,'')+'</ul>');
+
+    </script>
+</body>
+</html>

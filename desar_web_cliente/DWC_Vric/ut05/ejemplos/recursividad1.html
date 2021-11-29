@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function factorial(n){
+            if(n<=1) 
+                return 1
+            else
+                return n*factorial(n-1)
+        }
+
+        console.log(factorial(5))
+        
+        const array=[];
+        function llenar(n,array){
+            if(n==1)
+                array.push(1)
+            else{
+                array.push(n);
+                llenar(--n,array)
+            }
+        }
+        llenar(15,array)
+        console.log(array)
+
+        let a=[1,2,3,4];
+        function recorrerRecursivo(arr,i){
+            if(i==arr.length-1){
+                console.log(arr[i])
+            }else{
+                console.log(arr[i])
+                recorrerRecursivo(arr,++i)
+            }
+        }
+
+        recorrerRecursivo(a,2)
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr{
+            background-color: gray;
+            color: white;
+            text-align: center;
+        }
+        table{
+            border: 1px solid gainsboro;
+        }
+    </style>
+</head>
+<body>
+    <!--
+       Hacer un programa que pueste n combinaciones para jugar a la lotería primitiva.
+       Las combinaciones son números del 1 al 49, no se pueden repetir numeros en una 
+       combinación.
+
+       Usar arrays y mostrar la información en una tabla, deben aparecer las combinaciones
+       númeradas.
+    
+    -->
+    <script>
+        let filas=10;
+        let todos=new Array();
+        let body="";
+    
+        filas=parseInt(prompt('Cuantas combinaciones quieres:'));
+        while(isNaN(filas))
+            filas=parseInt(prompt('Cuantas combinaciones quieres:'));
+        premiado=prompt(`Introduce la combianción premidad, separados por comas`);
+
+        premiado=premiado.split(',');
+        console.log(premiado)
+    
+        while (filas){
+            filas--        
+            let Combinacion=new Array()
+            numeros=5
+            while(numeros){
+                n=Math.round(Math.random()*49+1)
+                if (!Combinacion.includes(n)){
+                    Combinacion.push(n);
+                    
+                    numeros--   
+                }
+            }
+            todos.push(Combinacion.sort((a,b)=>a-b)) 
+        }
+    
+        document.write(`<table>
+            <thead>
+                <tr>
+                    <th>Nº Combinación</th><th colspan="5">Combinación</th><th>Aciertos</th>
+                </tr>
+            </thead><tbody>`)
+        filas=0;
+        let mas_3=0;
+        for(let fila of todos){
+            let aciertos=0;
+            for(let numero of premiado){
+                if (fila.includes(parseInt(numero)))
+                    aciertos++
+
+                if(aciertos>2)
+                    mas_3++
+            }
+            body+=`<tr><td>${++filas}</td><td>${fila.join('</td><td>')}</td><td>${aciertos}</td></tr>`;
+        }
+        document.write(`${body}</table>`)
+        document.write(`Las ${todos.length} con tres o más aciertos hay${mas_3}` )
+        console.log(todos) 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        De una texto, decir cuantas palabras hay de cada una.
+        Usar solo un arrays de dos dimensiones.Se 
+        debe almacenar toda la información el arrays.
+    -->
+</head>
+<body>
+    <script>
+        const frase='Su casa bordeando la autopista Hizo Su casa bordeando la autopista Hizo que ella creciera muy deprisa No quise conocerla de aquel modo'
+        const arPalabras=frase.split(' ');
+        const setPalabras=new Set(arPalabras);
+        const tabla=[];
+
+
+        function cuantas(array,palabra){
+            let cont=0;
+            for(e of array){
+                if(e==palabra){
+                    cont++
+                }
+            }
+            return cont;
+        }
+
+
+       for(p of setPalabras){
+           let columna=[];
+           columna[0]=p;
+           columna[1]=cuantas(arPalabras,p);
+          tabla.push(columna)
+       }
+
+        /* function arrayToSet(a){
+            let s=new Set();
+            a.forEach(e => s.add(e));
+            return s;
+        }
+    
+        arrayToSet(arPalabras).forEach(e=>{
+            let columna=[];
+            columna[0]=e;
+            columna[1]=arPalabras.reduce((cuanto,elemento)=>{
+                if (elemento==e)
+                        cuanto++
+                return cuanto
+            },0);
+            tabla.push(columna);
+        }) */
+
+        console.log(tabla)
+
+        for(i=0;i<=tabla.length;i++){
+            for(j=0;j<=1;j++)
+                document.write(tabla[i][j],'');
+            document.write('<br>')
+        }
+            
+            
+        
+    </script>
+</body>
+</html>

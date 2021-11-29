@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <section id="s1">
+       <h1>Titulo</h1>
+       <p id="i1">Su casa bordeando la autopista
+        Hizo que ella creciera muy deprisa</p>
+   </section>
+   <section id="s2">
+       <p>No quise conocerla de aquel modo
+        Si quieres comprar algo, tengo todo</p>
+   </section>
+   <ul>
+       <li class="verdura">Tomate</li>
+       <li class="carne">tofu</li>
+       <li class="hidrato">Lenchuga</li>
+       <li class="verdura">lechuga</li>
+       <li class="carne">perrito caliente</li>
+       <li class="hidrato">arroz</li>
+   </ul>
+   <button>
+       aquí
+   </button>
+   <script>
+       //Selector por Etiqueta. Colección
+       let h1=document.getElementsByTagName('h1');
+       let p=document.getElementsByTagName('p');
+        let boton=document.getElementsByTagName('button');
+
+        let arrayDeBotones=[...boton];
+        console.log(boton)
+        console.log(arrayDeBotones)
+        boton[0].addEventListener('click',()=>{
+           /*  h1[0].innerHTML="otro"
+            for (e of p)
+            e.innerHTML="esto es lo mismo" */
+
+            /* for (e of hidrato)
+                e.innerHTML="siempre lo mismo" */
+
+            for (e of primerLi)
+                e.innerHTML="siempre lo mismo"
+
+            pConi1.innerHTML="Esto es nuevo"
+        })
+
+        //Selector por clas.
+        let hidrato=document.getElementsByClassName('hidrato');
+
+        //Selector por CSS
+        
+
+cument.getElementById('i1');
+
+        // querySelector('clase css')
+
+   </script>
+</body>
+</html>

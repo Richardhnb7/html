@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    flex-direction: row;
+}
+.contenedor1{
+    display: flex;
+    width: 50%;
+}
+.contenedor2{
+    display: flex;
+    width: 50%;
+}
+
+.car1{
+    position: fixed;
+    left: 50px;
+    top: 50px;
+    z-index: -1;
+}
+.car2{
+    position: fixed;
+    left: 100px;
+    top: 100px;
+    z-index: 0;
+}
+.car3{
+    position: fixed;
+    left: 150px;
+    top: 150px;
+    z-index: 1;
+}
+.car4{
+    position: fixed;
+    left: 200px;
+    top: 200px;
+    z-index: 2;
+}
+.car5{
+    position: fixed;
+    left: 650px;
+    top: 50px;
+    z-index: -1;
+}
+.car6{
+    position: fixed;
+    left: 700px;
+    top: 100px;
+    z-index: 2;
+}
+.car7{
+    position: fixed;
+    left: 750px;
+    top: 150px;
+    z-index: 0;
+}
+.car8{
+    position: fixed;
+    left: 800px;
+    top: 200px;
+    z-index: 1;
+}

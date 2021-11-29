@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Hacer una pagina web unn formulario donde el usuario pondra poner su nombre y un número del 1-78
+    de una lista desplegable etiqueta <select>, el contendido del desplegable debe ser creado
+        con javascript
+     -->
+     <form>
+        <p>
+            <label for="nombre">Introduce tu nombre:</label>
+            <input type="text">
+            <label for="numero">Seleeciona el número:</label>
+            <select id="numero" name="numero" multiple="multiple">
+            <script>
+                /* let n=1;
+                while(n<79){
+                    document.write(`<option>${n++}</option>`)
+                } */
+                for(let n=1; n< 79;n++)
+                    document.write(`<option>${n++}</option>`)
+            </script>
+            </select>
+          </p>
+     </form>
+     
+</body>
+</html>

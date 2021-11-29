@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            background-color: gray;
+            color: white;
+            text-align: center;
+        }
+        table{
+            border: 1px solid gainsboro;
+        }
+    </style>
+</head>
+<body>
+    <!--
+       Hacer un programa que pueste n combinaciones para jugar a la lotería primitiva.
+       Las combinaciones son números del 1 al 49, no se pueden repetir numeros en una 
+       combinación.
+
+       Usar arrays y mostrar la información en una tabla, deben aparecer las combinaciones
+       númeradas.
+
+    
+    -->
+<script>
+    let filas=10;
+    let todos=new Array();
+    let body="";
+
+    filas=parseInt(prompt('Cuantas combinaciones quieres:'));
+    while(isNaN(filas))
+        filas=parseInt(prompt('Cuantas combinaciones quieres:'));
+    
+
+    while (filas){
+        filas--        
+        let Combinacion=new Array()
+        numeros=5
+        while(numeros){
+            n=Math.round(Math.random()*49+1)
+            if (!Combinacion.includes(n)){
+                Combinacion.push(n);
+                
+                numeros--   
+            }
+        }
+        todos.push(Combinacion.sort((a,b)=>a-b)) 
+    }
+
+    document.write(`<table>
+        <thead>
+            <tr>
+                <th>Nº Combinación</th><th colspan="5">Combinación
+            </tr>
+        </thead><tbody>`)
+    filas=0;
+    for(let fila of todos)
+        body+=`<tr><td>${++filas}</td><td>${fila.join('</td><td>')}</td></tr>`;
+    
+    document.write(`${body}</table>`)
+    console.log(todos) 
+</script>
+</body>
+</html>

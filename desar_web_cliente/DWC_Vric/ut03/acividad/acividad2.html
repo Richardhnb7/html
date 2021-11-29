@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2.3</title>
+</head>
+<body>
+    <h1>Actividad 2.3</h1>
+    <script>
+        let salir=false,numero,acum=0,cuantos=0;
+
+        while (!salir){
+            numero=prompt("Di un numero")
+            console.log(numero)
+            if (!numero){
+                console.log("salgo")
+                salir=true;
+            }
+            numero=parseInt(numero)
+            if (!isNaN(numero)){
+                acum+=numero;
+                cuantos++;
+                console.log(`Cuantos: ${cuantos} media: ${acum}`)
+            } 
+        }
+        alert(`La media es: ${acum/cuantos} las suma es ${acum} y han sido  ${cuantos}  `)
+
+    </script>
+</body>
+</html>
