@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id='cancion'>
+        Cada vez que tú me miras
+        <p id='l1'>Cada vez que tú me miras</p>para 1
+        <h1>He <strong>vuelto</strong> a nacer</h1>
+        este 2
+        <p>Cada vez que tú respiras</p>aquí3
+        <p>Me haces sentir bien.</p>4
+    </div>
+    <script>
+        let cancion=document.getElementById('cancion');
+        let l1=document.getElementById('l1');
+
+        for(let nodo of cancion.children)
+            console.log(`Texto: ${nodo.nodeValue} Tipo: ${nodo.nodeType} Nombre: ${nodo.nodeName}**`)
+
+        document.write(`l1.nextElementSibling.innerHTML:${l1.nextElementSibling.innerHTML}<br>`)
+        document.write(`l1.nextSibling.innerHTML:${l1.nextSibling.nodeValue}<br>`)
+        document.write(`l1.parentNode.innerHTML:${l1.parentNode.innerHTML}`)
+    </script>
+</body>
+</html>

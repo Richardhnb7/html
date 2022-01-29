@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border: 1px solid;
+            width: 25%;
+            padding-left: 28px;
+            padding-bottom: 10px;
+        }
+        input{
+            width: 35.3%;
+        }
+        input#posición{
+            width: 6%;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <label for="números">Introduce los primeros enteros separados por comas:</label>
+        <input type="text" id="números" placeholder="Array de enteros">
+        <button>Ejemplo</button>
+    </p>
+    <button>Ordenar</button>
+    <div id="resultado"></div>
+
+    <script>
+        let botones=document.getElementsByTagName("button");
+
+        // Función botones
+        botones[0].addEventListener('click',()=>{
+            document.getElementById("números").value="5,2,7,3,9,4";
+        })
+
+        botones[1].addEventListener('click',()=>{
+            let números=document.getElementById("números").value;
+
+            if(números.length!=0){
+                let array=números.split(",");
+                document.getElementById('resultado').innerHTML=array.sort();
+            }
+            else{
+                document.getElementById('resultado').innerHTML="<span style='color: red'>Rellena el campo</span>";
+            }  
+        })
+    </script>
+</body>
+</html>

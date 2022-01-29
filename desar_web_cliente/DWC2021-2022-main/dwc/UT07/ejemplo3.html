@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rojo{
+            color: red;
+        }
+        .verde{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+   <h1 class ="info"></h1>
+    <input type="text" id="nombre">
+    <button>Añadir</button>
+    <div class="tablero">
+        <h1 class="tirada"></h1>
+        <h1 class="tirada"></h1>
+        <h1 class="tirada"></h1>
+        <h1 class="tirada"></h1>
+        <h1 class="tirada"></h1>
+    </div>
+    <script>
+        let nombre = document.getElementById('nombre');
+        let boton = document.getElementsByTagName('button');
+        let tablero = document.getElementsByClassName('tablero');
+        let tirada=document.getElementsByClassName('tirada');
+        let info = document.getElementsByClassName('info')
+        const arr = ['cinco','siete','cosas','mosca','pocas'];
+        let posicion=0;
+        const secreta = "cosas";
+        
+        //funcion que retorna una palabra de un array, se le pasa un array y devuelve
+        //una palabra al azar.
+        function azar(arr){
+            return arr[parseInt(Math.random()*arr.length-1)];  
+        }
+
+        //Hacer una funcion a la que le pasamos una palabra y una letra
+        //la función nos devolvera  un array con 0 y 1 donde los 1
+        //estarán en la posición  donde coincida la letra en la palabra.
+        //ejemplo palabra cosas y letra s devolvera [0,0,1,0,1]
+
+        const palabra = "cosas";
+        const letra = "s"
+     
+        function devolucion(palabra,letra){
+            for ( i of palabra) {
+                const resul = [];
+                if (palabra.includes(letra)){
+                     resul.push(1);
+                }else{
+                     resul.push(0);
+                }
+                return resul;
+            }
+            
+        }
+
+        //Hacer una funcion a la que le pasemos 2 palabras y retorna un array
+        //donde se comparan los elementos de la siguiente manera:
+        //si el elemento de la posición n en la primera palabra esta en la posición
+        // n de la segunda, pondra en el array un 2 en la posicion n.
+        //Si el elemento de la posición n en la primera palabra es tá en alguna de la 
+        //segunda devolvera un 1 en el a rray en la posicion n.
+
+       function posiciones(secreta,prueba){
+            console.log(secreta,prueba);
+            let solucion=['negro','negro','negro','negro','negro'];
+            for (i in secreta){
+                if(secreta.includes(prueba[i]))
+                    solucion[i] = 'rojo'    
+            }
+
+           for (i in secreta) {
+                if (secreta[i]==prueba[i]) 
+                    solucion[i]='verde';
+            }
+            return solucion;
+        }
+        //hacer funcion a la que pasamos el array_de_colores y la palabra secreta
+        //y nos devuelve una cadena
+   
+        
+        function UnirInfo(palabra,array){
+            let cadena = "";
+            for (i in palabra){
+                cadena+= `<span class = ${array[i]}>${palabra[i]}</span>`;
+            }
+            return cadena;
+        }
+        //Hacer una funcion llamada heGanado a la que le pasas el array de posiciones
+        // y te devuelve true si todos los elementos son verdes
+        
+        function heGanado(array){
+            solucion = true;
+            for (e of array){
+               solucion = solucion & (e == 'verde');
+                if (solucion == true){
+                    info[0].innerHTML="Has ganado";
+                    boton[0].setAttribute('disabled',true);
+                }else{
+                    info[0].innerHTML="Sigue intentandolo";
+
+                }
+            }
+            return solucion;
+
+
+        }   
+
+        boton[0].addEventListener('click',()=>{
+                array=posiciones(secreta,nombre.value)
+                tirada[posicion].innerHTML=`<h1>${UnirInfo(nombre.value,array)},${heGanado(array)}, ${posicion++}</h1>`;
+
+            })
+
+
+
+      
+
+      
+    </script>
+</body>
+</html>

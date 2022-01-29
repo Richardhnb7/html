@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE facturas [    
+    <!ELEMENT facturas (factura*)>
+        <!ELEMENT factura (datos_cliente, datos_ticket_factura)>
+            <!ELEMENT datos_cliente (nombre, apellido, apellido, dni, tfno)>
+                <!ATTLIST datos_cliente ident ID #REQUIRED>
+                <!ELEMENT nombre (#PCDATA)>
+                <!ELEMENT apellido (#PCDATA)>
+                <!ELEMENT dni (#PCDATA)>
+                <!ELEMENT tfno (#PCDATA)>
+            <!ELEMENT datos_ticket_factura (resguardo, (alquileres | compras | (alquileres,compras)))>
+                <!ELEMENT resguardo (forma_pago, importe_total)>
+                    <!ELEMENT forma_pago (#PCDATA)>
+                    <!ELEMENT importe_total (#PCDATA)>
+                <!ELEMENT alquileres (fecha, peliculas)>
+                    <!ELEMENT fecha (#PCDATA)>
+                    <!ELEMENT peliculas (pelicula+)>
+                        <!ELEMENT pelicula (titulo, genero, duracion, actores)>
+                            <!ATTLIST pelicula
+                                id_pelicula ID #REQUIRED
+                                valoracion CDATA ""
+                                caratula ENTITY #IMPLIED
+                            >
+                            <!ELEMENT titulo (#PCDATA)>
+                            <!ELEMENT genero (#PCDATA)>
+                            <!ELEMENT duracion (#PCDATA)>
+                            <!ELEMENT actores (actor*)>
+                                <!ELEMENT actor (nombre, apellido, apellido)>
+                <!ELEMENT compras (dvds | cintas | (dvds,cintas))>
+                    <!ELEMENT dvds (dvd+)>
+                    <!ELEMENT dvd (extras?, titulo, fecha_salida_mercado)>
+                        <!ELEMENT extras EMPTY>
+                        <!ELEMENT fecha_salida_mercado (#PCDATA)>
+                        <!ELEMENT cintas (cinta+)>
+                            <!ELEMENT cinta (titulo, formato, rebobinado?)>
+                                <!ELEMENT formato (#PCDATA)>
+                                <!ELEMENT rebobinado EMPTY>
+]>
+
+
+<facturas>
+    <factura>
+        <datos_cliente ident="c1">
+            <nombre>Sergio</nombre>
+            <apellido>Castaño</apellido>
+            <apellido>Pereira</apellido>
+            <dni>12345</dni>
+            <tfno>67896</tfno>
+        </datos_cliente>
+
+        <datos_ticket_factura>
+            <resguardo>
+                <forma_pago>efectivo</forma_pago>
+                <importe_total>30</importe_total>
+            </resguardo>
+            <alquileres>
+                <fecha>12/01/2022</fecha>
+                <peliculas>
+                    <pelicula id_pelicula="p10" caratula="c0360">
+                        <titulo>Capitan américa: El primer vengador</titulo>
+                        <genero>Superherores</genero>
+                        <duracion>124min</duracion>
+                        <actores>
+                            <actor>
+                                <nombre>Chris</nombre>
+                                <apellido>Evans</apellido>
+                                <apellido></apellido>
+                            </actor>
+                        </actores>
+                    </pelicula>
+                </peliculas>
+            </alquileres>
+            <compras>
+                <dvds>
+                    <dvd>
+                        <extras />
+                        <titulo>Black panter</titulo>
+                        <fecha_salida_mercado>2018</fecha_salida_mercado>
+                    </dvd>
+                </dvds>
+                <cintas>
+                    <cinta>
+                        <titulo>titanic</titulo>
+                        <formato>VHS</formato>
+                    </cinta>
+                </cintas>
+            </compras>
+        </datos_ticket_factura>
+    </factura>
+    <factura>
+        <datos_cliente ident="c2">
+            <nombre>Marcos</nombre>
+            <apellido>Molina</apellido>
+            <apellido>Perez</apellido>
+            <dni>1234</dni>
+            <tfno>6789</tfno>
+        </datos_cliente>
+
+        <datos_ticket_factura>
+            <resguardo>
+                <forma_pago>tarjeta</forma_pago>
+                <importe_total>42</importe_total>
+            </resguardo>
+            <alquileres>
+                <fecha>12/01/2022</fecha>
+                <peliculas>
+                    <pelicula id_pelicula="p20" caratula="c0427">
+                        <titulo>Avengers</titulo>
+                        <genero>Superheroes</genero>
+                        <duracion>120min</duracion>
+                        <actores>
+                            <actor>
+                                <nombre>Chris</nombre>
+                                <apellido>Evans</apellido>
+                                <apellido></apellido>
+                            </actor>
+                            <actor>
+                                <nombre>Tom</nombre>
+                                <apellido>Holland</apellido>
+                                <apellido></apellido>
+                            </actor>
+                            <actor>
+                                <nombre>Robert</nombre>
+                                <apellido>Downey JR</apellido>
+                                <apellido></apellido>
+                            </actor>
+                        </actores>
+                    </pelicula>
+                </peliculas>
+            </alquileres>
+            <compras>
+                <dvds>
+                    <dvd>
+                        <extras />
+                        <titulo>Batman: el caballero de la noche</titulo>
+                        <fecha_salida_mercado>2008</fecha_salida_mercado>
+                    </dvd>
+                </dvds>
+                <cintas>
+                    <cinta>
+                        <titulo>Star wars 4: Una nueva esperanza</titulo>
+                        <formato>VHS</formato>
+                    </cinta>
+                </cintas>
+            </compras>
+        </datos_ticket_factura>
+    </factura>
+        <factura>
+            <datos_cliente ident="c3">
+                <nombre>Nuria</nombre>
+                <apellido>Abellan</apellido>
+                <apellido>Gonzalez</apellido>
+                <dni>1234567</dni>
+                <tfno>6789567</tfno>
+            </datos_cliente>
+
+            <datos_ticket_factura>
+                <resguardo>
+                    <forma_pago>efectivo</forma_pago>
+                    <importe_total>45</importe_total>
+                </resguardo>
+                <alquileres>
+                    <fecha>12/01/2022</fecha>
+                    <peliculas>
+                        <pelicula id_pelicula="p30" caratula="c1201">
+                            <titulo>Avengers: End game</titulo>
+                            <genero>Superheroes</genero>
+                            <duracion>160min</duracion>
+                            <actores>
+                                <actor>
+                                    <nombre>Chris</nombre>
+                                    <apellido>Evans</apellido>
+                                    <apellido></apellido>
+                                </actor>
+                                <actor>
+                                    <nombre>Tom</nombre>
+                                    <apellido>Holland</apellido>
+                                    <apellido></apellido>
+                                </actor>
+                                <actor>
+                                    <nombre>Robert</nombre>
+                                    <apellido>Downey JR</apellido>
+                                    <apellido></apellido>
+                                </actor>
+                            </actores>
+                        </pelicula>
+                    </peliculas>
+                </alquileres>
+                <compras>
+                    <dvds>
+                        <dvd>
+                            <extras />
+                            <titulo>Lalaland</titulo>
+                            <fecha_salida_mercado>2016</fecha_salida_mercado>
+                        </dvd>
+                    </dvds>
+                    <cintas>
+                        <cinta>
+                            <titulo>Star wars 5: el retorno del jedi</titulo>
+                            <formato>VHS</formato>
+                        </cinta>
+                    </cintas>
+                </compras>
+            </datos_ticket_factura>
+    </factura>
+</facturas>

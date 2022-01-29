@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(6, 9, 214, 0.267);
+}
+main{
+    width: 80%;
+    margin: 2em auto 2em ;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#arriba h1{
+   text-align: center;
+   margin: 1rem;  
+}
+
+
+footer h2{
+    text-align: center;
+   margin: 1rem; 
+ 
+}
+div#arriba,img,div#medio,footer,label,input,header{
+    width: 100%;
+}
+img{
+    width: 100%;
+}
+.medio div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+input{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.boton{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+@media all and (min-width: 415px){
+        label{
+            flex-basis: 25%;
+            text-align: right;
+            color: rgb(0, 0, 0);
+            padding-right: 1rem;
+        }
+        input{
+            flex-basis: 75%;
+        }
+        .medio div{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .boton{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+  
+       
+}
+@media all and (min-width: 768px){
+    label{
+            flex-basis: 12%;
+            text-align: right;
+            color: rgb(44, 9, 141);
+            padding-right: 1rem;
+        }
+        input{
+            flex-basis: 37%;
+        }
+        .medio div{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .boton{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+  
+}

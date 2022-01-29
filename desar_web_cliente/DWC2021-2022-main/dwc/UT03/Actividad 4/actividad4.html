@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Palabras, Contador = 0, Indice = -1;
+        Palabras = prompt("Dame palabras: ")
+        document.write(`La longitud de la palabra: ${Palabras} es: ${Palabras.length}<br>` );
+        while (Palabras !== "cancelar"){
+            Indice = Contador;
+            Palabras = prompt("Dame más palabras: ")
+            document.write(`La longitud de la palabra: ${Palabras} es: ${Palabras.length} <br>`  )
+            Indice ++;
+            Contador++;
+        }
+
+    </script>
+</body>
+</html>

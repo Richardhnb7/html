@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border: 1px solid;
+            width: 73%;
+            padding-left: 13px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio Sencillo 1 Arrays, Mayor, Menor y Media</h1>
+    <p>Introduce los enteros separados por comas</p>
+    <input type="text" id="datos">
+    <button>Cargar Ejemplo</button>
+    <p>
+        <button>calcular</button>
+        <button>Reiniciar</button>
+    </p> 
+    <div id="suma"></div>
+    <div id="media"></div>
+    <div id="mayor"> </div>
+    <div id="menor"></div>
+
+    <script>
+        let botón=document.getElementsByTagName("button");
+        // Función botones
+        botón[0].addEventListener('click',()=>{
+            document.getElementById("datos").value="63,45,58,56";
+        })
+
+        botón[1].addEventListener('click',()=>{
+            let datos=document.getElementById("datos").value;
+            let array=datos.split(",");
+            let válido=true;
+            for(elemento of array){
+                if(isNaN(elemento)){
+                    válido=false;
+                }
+            }
+            if(válido){
+                document.getElementById("suma").innerHTML=`La suma es ${suma(array)}`;
+                document.getElementById("media").innerHTML=`La media ${media(array)}`;
+                document.getElementById("mayor").innerHTML=`El mayor es ${mayor(array)}`;
+                document.getElementById("menor").innerHTML=`El menor es ${menor(array)}`;
+            }
+            else{
+                document.getElementById("suma").innerHTML="<p style='color: red'>Introduce valores numéricos</p>";
+            }
+        })
+
+        botón[2].addEventListener('click',()=>{  
+            document.getElementById("datos").value="";
+        })
+        //Funciones
+        function suma(array){
+            let suma=0;
+            for (número of array){
+                suma+=parseInt(número);
+            }
+            return suma;
+        }
+
+        function media(array){
+            let suma=0;
+            for (número of array){
+                suma+=parseInt(número);
+            }
+            return suma/array.length;
+        }
+
+        function mayor(array){
+            let mayor=0;
+            for (número of array){
+                if(número>mayor){
+                    mayor=número;
+                }
+            }
+            return mayor;
+        }
+        
+        function menor(array){
+            let menor=100;
+            for (número of array){
+                if(número<menor){
+                    menor=número;
+                }
+            }
+            return menor;
+        }
+    </script>
+</body>
+</html>

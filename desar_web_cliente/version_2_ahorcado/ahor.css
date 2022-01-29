@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+#contenedor{
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    align-items: center;
+    
+}
+#letra{
+    margin-top: 1em;
+}
+#resultados{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between
+}
+#marcador{
+    margin: 2rem;
+}
+
+span{
+    background-color: darkgray;
+    padding: 1em ;
+    border: 1px solid black;
+}

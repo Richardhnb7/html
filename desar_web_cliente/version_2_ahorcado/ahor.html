@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ahor.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div id="contenedor">
+        <h1>El ahorcado</h1>
+        <div id="imagen">
+            
+        </div>
+        <div id="intent">
+
+        </div>
+        <div id="letra">
+            <p>letra <input id="lugar_letras" type="text"><button id="probar">Probar</button></p>
+        </div>
+        <div id="marcador">
+
+        </div>
+    </div>
+    <script>
+        let imagen = document.getElementById('imagen');
+        let letras = document.getElementById('lugar_letras');
+        let probar = document.getElementById('probar');
+        let marcador = document.getElementById('marcador');
+        let intent = document.getElementById('intent');
+        let palabra = 'richard';
+        let numeroLetras= palabra.length
+
+
+        function pintacuadros(palabra, donde) {
+            donde.innerHTML = [...palabra].reduce((a, x) => a + '<span> </span>', "")
+            for (i = 0, cadena = ""; i < palabra.length - 1; i++) {
+                cadena = cadena + '<span> </span>'
+            }
+            return cadena
+        }
+        function Trans_pala_array(pala) {
+            let secre = []
+            secre = pala.split("")
+            return secre;
+        }
+        function CondicionFinalizar(array) {
+            let progre = [];
+            for (indice in array) {
+                progre.unshift(" ")
+            }
+            return  progre
+        }
+        function enPantalla(array) {
+            let cade="";
+                for (i of progreso) {
+                    cadena+=`<span> ${i}</span>`
+                }
+            return cade;
+        }
+        function Mostrar(array) {
+            let cadena="";
+                for (i of array) {
+                    cadena+=`<span> ${i}</span>`
+                }
+            return cadena
+        }
+        pintacuadros(palabra, marcador)
+        let secreta = Trans_pala_array(palabra)
+        let progreso = CondicionFinalizar(secreta)
+        let posicion;
+        let letr;
+        let intentos = 0;
+        let contador=0;
+
+        probar.addEventListener('click',()=>{
+                letr=letras.value
+                posicion=secreta.indexOf(letr)
+            if (posicion==-1){
+                intentos++
+                imagen.innerHTML=`<img src="/img/${intentos}.png" alt="">`
+                intent.innerHTML=`llevas ${intentos} intentos`
+            } 
+            while (posicion!=-1) {
+                progreso[posicion]=letr;
+                secreta[posicion]="";
+                posicion=secreta.indexOf(letr)
+                marcador.innerHTML=Mostrar(progreso)
+                contador++;
+            } 
+            
+            if (contador==numeroLetras) {
+                probar.toggleAttribute('disabled')
+                intent.innerHTML=`has ganado`
+                imagen.innerHTML=`<img src="/img/victoria.jpg" alt="">`
+            }
+            if (intentos==7 ) {
+                probar.toggleAttribute('disabled')
+                intent.innerHTML=`llevas ${intentos} intentos <br> GAME OVER`
+            }
+        })   
+    </script>
+</body>
+
+</html>

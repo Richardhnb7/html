@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="s1">
+        <h1>Titulo</h1>
+        <p>
+            Su casa bordeando la autopista
+            Hizo que ella creciera muy deprisa
+        </p>
+    </section>
+    <section id="s2">
+        <p id="i1">
+            No quise conocerla de aquel modo
+            Si quieres comprar algo, tengo todo
+        </p>
+    </section>
+    <ul>
+        <li class="verdura">Tomate</li>
+        <li class="carne">tofu</li>
+        <li class="hidrato">Lechuga</li>
+
+        <li class="verdura">acelga</li>
+        <li class="carne">perrito caliente</li>
+        <li class="hidrato">arroz</li>
+    </ul>
+    <button>
+        Aquí
+    </button>
+    <script>
+
+        //Selector por etiquetas. Coleccion
+        let h1 = document.getElementsByTagName('h1');
+
+        let p = document.getElementsByTagName('p');
+
+        // p[0].innerHTML="Soy yo"
+        // p[1].innerHTML="Miguel"
+        let boton = document.getElementsByTagName('button');
+        let arrayDeBotones=[...boton];
+        console.log(boton)
+        console.log(arrayDeBotones)
+        boton[0].addEventListener('click', () => {
+          //  h1[0].innerHTML = "otro" //innerHTML = contenido
+
+           // for (e of p) {
+           //     e.innerHTML = "Esto es lo mismo"
+          //  }
+
+        //  for (e of hidrato){
+         //     e.innerHTML="siempre lo mismo"
+        //  }
+
+        for (e of primerLi){
+            e.innerHTML="Siempre lo mismo"
+        }
+        
+        pConI1.innerHTML="Esto es nuevo"
+
+        })
+
+        //Selector por clase.
+
+        let hidrato = document.getElementsByClassName('hidrato');
+
+        //Selector por CSS
+        let primerLi = document.querySelectorAll('ul li:first-child');
+
+        //Selector por id
+        let pConI1 = document.getElementById('i1');
+
+        //querySelector('clase css')
+        
+
+
+    </script>
+</body>
+
+</html>

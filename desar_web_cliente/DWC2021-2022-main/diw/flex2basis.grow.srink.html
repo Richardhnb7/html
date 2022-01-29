@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+            
+        }
+        div.container{
+            min-width: 100px;
+            width: 90%;
+            margin: 5px auto;
+            display:flex;
+            align-items: flex-start;
+            background-color: aqua;
+            flex-wrap: nowrap;
+
+        }
+        .container div{
+            
+            background: burlywood;
+        }
+
+        .container div:nth-child(1){
+            flex-basis: 30%;
+            flex-grow: 1;
+            align-self: flex-end;
+        }
+        .container div:nth-child(2){
+            flex-basis: 30%;
+            align-self: stretch;
+        }
+        .container div:nth-child(3){
+            flex-basis: 15%;
+          /*  flex-grow: 3;*/
+            flex-grow:1;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }   
+
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>Uno</div>
+        <div>Dos</div>
+        <div>
+            <img src="img/depositphotos_81725616-stock-photo-white-gray-marble-texture-background.jpg" alt="">
+        </div>
+
+    
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <div class="g-recaptcha" data-sitekey="6Lcjd30UAAAAAIWm....."></div>
+</body>
+</html>

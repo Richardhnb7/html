@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+      let cadena,desplazamiento,nueva_Cadena="",i_desplazamiento=0;
+       let frase = prompt("Dame una frase");
+       let numero = parseInt(promp("Dame un numero para encriptar"))
+       while (isNaN(numero)){
+           numero=parseInt(prompt("Da un numero correcto"))
+       }
+       let numeros = numero.toString().split("");
+       console.log(numeros)
+       for (indice in frase){
+            codigo_letra=frase.charCodeAt(indice)
+            codigo_letra=codigo_letra+parseInt(numeros[i_desplazamiento++%numeros.lenght])
+            console.log(numeros[i_desplazamiento%numeros.lenth])
+            
+           
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let Palabras, Contador = 0, Indice = -1, Longitud;
+
+        Palabras = ".";
+        while (Palabras !== null) {
+            Palabras = prompt("Dame  palabras: ")
+            for (let i = 0; i < Palabras.length; i++)
+                document.write(`${Palabras.charAt(i)}  <br>`);
+            document.write(`${"*".repeat(10)} con for clasico<br>`);
+
+            for (let i in Palabras)
+                document.write(`${Palabras.charAt(i)} <br>`);
+            document.write(`${"*".repeat(10)} con for in <br>`);
+
+            for (let caracter of Palabras)
+                document.write(`${caracter}<br> `);
+            document.write(`${"*".repeat(10)} con for of<br>`);
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>

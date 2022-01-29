@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Introduce los primeros enteros separados por comas: </p>
+    <input type="text" placeholder="Array de Enteros" id="array">
+    <input type="button" value="Ejemplo" onclick="ejemplo()">
+    <p>
+        Valor: <input type="number" placeholder="Numero a añadir" id="valor">
+        Posición del Array: <select id="posicion">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4" selected="">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        <input type="button" value="Insertar" onclick="insertar()">
+    </p>
+    <input type="button" value="Reiniciar" onclick="reiniciar()">
+    <p id="resultado"></p>
+
+    <script>
+        var array = [],
+            tmp = 0;
+
+        function ejemplo() {
+
+            for (i = 0; i < 6; i++) {
+                array.push(parseInt(Math.random() * 100));
+            }
+            document.getElementById("array").value = array;
+        }
+
+        function insertar() {
+            array = document.getElementById("array").value.split(/,/);
+            var posicion = document.getElementById("posicion").value;
+            var valor = document.getElementById("valor").value;
+
+            for (i = posicion; i < array.length; i++) {
+                tmp = array[i];
+                array[i] = valor;
+                valor = tmp;
+            }
+            array[i] = valor; //Tengo que añadir el último elemento
+
+            document.getElementById("resultado").innerHTML = array;
+
+        }
+
+        function reiniciar() {
+            location.reload();
+        }
+    </script>
+</body>
+
+</html>

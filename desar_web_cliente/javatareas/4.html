@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border: 1px solid;
+            width: 28%;
+            padding-left: 15px;
+        }
+        input{
+            width: 72%;
+        }
+        p{
+            margin-bottom: 6px
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <label for="números1">Introduce los primeros enteros separados por comas:</label><br>
+        <input type="text" id="números1" placeholder="Introduce los elementos del primer array">
+        <button>Ejemplo 1</button>
+    </p>
+    <p>
+        <label for="números2">Introduce los segundos enteros separados por comas:</label><br>
+        <input type="text" id="números2" placeholder="Introduce los elementos del segundo array">
+        <button>Ejemplo 2</button>
+    </p>
+    <p>
+        <button>Concatenar</button>
+        <button>Reiniciar</button>
+    </p> 
+    <div id="resultado"></div>
+
+    <script>
+        let botones=document.getElementsByTagName("button");
+
+        // Función botones
+        botones[0].addEventListener('click',()=>{
+            document.getElementById("números1").value="1,3,5,7,9,11,13,15,17";
+        })
+        botones[1].addEventListener('click',()=>{
+            document.getElementById("números2").value="2,4,6,8,10,12,14,16,18";
+        })
+        botones[2].addEventListener('click',()=>{
+            let números=document.getElementById("números1").value;
+            let array=[];
+            let array2=[];
+            if(números.length!=0){
+                array=números.split(",");
+            }
+            let números2=document.getElementById("números2").value;
+            if(números2.length!=0){
+                array2=números2.split(",");
+            }
+            if(array.length==0 || array2.length==0){
+                document.getElementById('resultado').innerHTML="<p style='color: red'>Rellena los campos</p>";
+            }
+            else{
+                if(array.length==array2.length){
+                    document.getElementById('resultado').innerHTML=`<p>${concatenar(array,array2)}</p>`;
+                }
+                else{
+                    document.getElementById('resultado').innerHTML="<p style='color: red'>La cantidad de números de los dos campos deben ser iguales</p>";
+                }
+            }   
+        })
+        botones[3].addEventListener('click',()=>{
+            document.getElementById("números1").value=null;
+            document.getElementById("números2").value=null;
+        })
+
+        //Funciones
+        function concatenar(array1,array2){
+            let concatenado=[];
+            for(i=0; i<array1.length; i++){
+                concatenado.push(array1[i]);
+                concatenado.push(array2[i]);
+            }
+            return concatenado;
+        }
+    </script>
+</body>
+</html>

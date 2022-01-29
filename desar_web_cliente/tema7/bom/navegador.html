@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="motor"></p>
+    <button id="datosMotor">mostrar datos de tu navegador</button>
+    <button id="recargar">recargar</button>
+
+    <script>
+
+        let pMotor=document.getElementById('motor');
+        let bmotor=document.getElementById('datosMotor')
+
+
+        document.getElementById('recargar').addEventListener('click',() =>{
+
+            //location.reload();
+            history.go(-(history.length-1))
+        })
+        bmotor.addEventListener('click',()=>{
+
+            /* let lista_plugins;
+
+            console.log(navigator)
+            for(plugin of navigator.plugins)
+                lista_plugins+=plugin.name + ' '
+ */
+            //pMotor.textContent=navigator.userAgent+ ' '+navigator.language+ ' ' +navigator.cookieEnabled+;
+            //aqui dentro esta todos los datos de
+            //mi navegador, el lenguaje del navegador, los plugins que tenemos instalados
+
+
+            //pMotor.textContent=screen.orientation.type
+
+           // location='http://wwww.google.es'
+
+           
+            pMotor.textContent=location.protocol+ ' '+location.hostname
+
+
+
+            console.log(screen.orientation)
+        })
+    </script>
+
+</body>
+</html>

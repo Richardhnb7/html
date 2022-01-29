@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            counter-reset:lineas;
+            counter-reset: canciones;
+        }
+        h2{
+            counter-reset:lineas;
+        }
+        h2::before{
+            content: counter(canciones,upper-roman);
+            counter-increment: canciones;
+        }
+
+        p::before{
+
+            content : counter(canciones) "-" counter(lineas,upper-alpha) " :)) ";
+            counter-increment: lineas;
+        }
+    </style>
+</head>
+<body>
+  <h1>Antonio Vega</h1>
+  <h2>La chica de ayer</h2>
+  <p>Un dia cualquiera no sabes que hora es </p>
+  <p>Te acuestas a mi lado sin saber por que </p>
+  <p>las calles mojadas te han visto crecer</p>
+  <p>Y tu, en tu corazon estás llorando otra vez</p>
+  
+  <h2>El sitio de mi recreo</h2>
+  <p>Donde nos llevo la imaginacion</p>
+  <p>Donde con los ojos cerrados</p>
+  <p>Se divisan infinitos campos</p>
+    
+
+    
+</body>
+</html>

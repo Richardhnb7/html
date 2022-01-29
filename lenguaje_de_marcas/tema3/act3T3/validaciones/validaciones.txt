@@ -1,0 +1,20 @@
+las validaciones tipo de proceso automático llamado validación, en el cuál,
+    establecemos unas pautas para que si el usuario introduce alguna información
+    incorrecta, deba modificarla o en caso contrario no podrá continuar ni enviar 
+    el formulario correctamente.
+
+Se utiliza específicamente para verificar el cumplimiento de la DTD, para 
+    realizar una comprobación de validación de un documento. Examina un documento
+    en busca de elementos, atributos y otros errores que falten o sean incorrectos.
+
+La validación es muy importante, porque asegura que las páginas web son interpretadas 
+    de la misma forma por software diferente.
+
+Para asegurarnos de que nuestro código está correctamente escrito, podemos utilizar un 
+    Validador HTML, que no es más que un sistema que analiza nuestro código y nos dice 
+    el número de errores que tenemos, junto a una breve descripción del mismo.
+
+Para realizar ese proceso de validación podemos utilizar HTML Validator, de W3C, que 
+    contiene Nu HTML Checker, un validador de HTML5 aún en fase experimental, pero que 
+    actualmente puede ser utilizado sin problemas para este proceso de búsqueda de errores:
+

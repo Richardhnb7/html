@@ -1,0 +1,34 @@
+<?xml version="1.0"  encoding="ISO-8859-1" ?>  
+<rss version="2.0">
+<channel>
+    <title>sindicacion de contenido</title>
+    <link>http://127.0.0.1:5500/ejercicio1.html</link>
+    <description>Noticias de actualidad</description>
+    <item>
+        <title>el pais</title>
+        <link>https://elpais.com/</link>
+        <description>periodico el país</description>
+        
+    </item>
+    <item>
+        <title>El mundo</title>
+        <link>https://www.elmundo.es/</link>
+        <description> periodico el mundo</description>
+    </item>
+    <item>
+        <title>La razón</title>
+        <link>https://www.larazon.es/</link>
+        <description>periodico la razón</description>
+    </item>
+    <item>
+        <title>New York Times</title>
+        <link>https://www.nytimes.com/es/</link>
+        <description>periodico internacional ny times</description>
+    </item>
+    <item>
+        <title>Marca</title>
+        <link>https://www.marca.com/</link>
+        <description>periodico deportivo marca</description>
+    </item>
+</channel>
+</rss>

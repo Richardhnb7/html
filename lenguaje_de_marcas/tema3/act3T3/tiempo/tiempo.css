@@ -1,0 +1,101 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.contenedor{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    width: 80%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.titulo{
+    text-align: right;
+}
+#paraguas,#termometro{
+    color: red;
+}
+#termometro{
+    color: red;
+}
+.tiempo{
+     display: flex;
+     flex-direction: row;
+}
+.dia{
+    background-color:lightgray;
+    text-align: center;
+    padding: 10px;
+    border-radius: 1em 1em 0em 0em;
+}
+.icon{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+#lunes{
+    border: 0.2rem solid black;
+    border-radius: 1em 1em 0em 0em;
+    margin: 1rem;
+}
+#lunes>.min{
+    background-color: rgb(30, 188, 216);
+    text-align: center;
+}
+#lunes>.max{
+    background-color: rgb(250, 44, 29);
+    text-align: center;
+}
+#martes{
+    border: 0.2rem solid black;
+    border-radius: 1em 1em 0em 0em;
+    margin: 1rem;
+}#martes>.min{
+    background-color: rgb(30, 188, 216);
+    text-align: center;
+}
+#martes>.max{
+    background-color: rgb(250, 92, 81);
+    text-align: center;
+}
+#miercoles{
+    border: 0.2rem solid black;
+    border-radius: 1em 1em 0em 0em;
+    margin: 1rem;
+}
+#miercoles>.min{
+    background-color: rgb(15, 115, 230);
+    text-align: center;
+}
+#miercoles>.max{
+    background-color: rgb(248, 131, 123);
+    text-align: center;
+}
+#jueves{
+    border: 0.2rem solid black;
+    border-radius: 1em 1em 0em 0em;
+    margin: 1rem;
+}
+#jueves>.min{
+    background-color: rgb(30, 73, 216);
+    text-align: center;
+}
+#jueves>.max{
+    background-color: rgb(245, 122, 114);
+    text-align: center;
+}
+#viernes{
+    border: 0.2rem solid black;
+    border-radius: 1em 1em 0em 0em;
+    margin: 1rem;
+}
+#viernes>.min{
+    background-color: rgb(30, 73, 216);
+    text-align: center;
+}
+#viernes>.max{
+    background-color: rgb(241, 103, 93);
+    text-align: center;
+}

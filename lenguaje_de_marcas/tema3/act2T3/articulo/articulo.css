@@ -1,0 +1,41 @@
+*{
+    font-size: x-large;
+}
+#titulo{
+    text-align: center;
+    font-size: 250%;
+}
+#datos{
+    text-align: right;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#datos>a>img{
+    width: 200px;
+}
+#foto1>img{
+    border: 1px solid black;
+    width: 100px;
+    float: left;
+    margin: 0rem 0.5rem 0rem 0rem;
+}
+p::first-letter{
+    font-size:200%;
+}
+ul{
+    list-style:circle ;
+}
+#foto2>img{
+    border: 1px solid black;
+    width: 100px;
+    float: right;
+    margin: 0.5rem;
+}
+.apps{
+    font-style:italic;
+}
+#social{
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

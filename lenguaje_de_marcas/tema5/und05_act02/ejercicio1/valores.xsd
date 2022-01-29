@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns="./valores.xml"
+        targetNamespace="./valores.xml"
+        elementFormDefault="qualified">
+        <xs:element name="valores">
+                <xs:complexType>
+                        <xs:sequence>
+                                <xs:element name="accion">
+                                        <xs:complexType mixed="true">
+                                                <xs:sequence>
+                                                        <xs:element name="mercado" type="xs:string"/>
+                                                        <xs:element name="nombre" type="xs:string"/>
+                                                        <xs:element name="mercado-abierto" type="xs:string"/>
+                                                        <xs:element name="recomendaciones" type="xs:integer"/>
+                                                        <xs:element name="fecha">
+                                                                <xs:complexType>
+                                                                        <xs:sequence>
+                                                                                <xs:element name="dia" type="xs:integer"/>
+                                                                                <xs:element name="mes" type="xs:integer"/>
+                                                                                <xs:element name="año" type="xs:integer"/>
+                                                                        </xs:sequence>
+                                                                </xs:complexType>
+                                                        </xs:element>
+                                                </xs:sequence>
+                                        </xs:complexType>
+                                </xs:element>
+                        </xs:sequence>
+                </xs:complexType>
+
+        </xs:element>
+
+</xs:schema>

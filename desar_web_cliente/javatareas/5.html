@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border: 1px solid;
+            width: 30%;
+            padding-left: 28px;
+            padding-top: 2px;
+        }
+        input{
+            width: 33%;
+        }
+        input#posición{
+            width: 6%;
+        }
+    </style>
+</head>
+<body>
+    <p><label for="números">Introduce los primeros enteros separados por comas:</label></p>
+    <p>
+        <input type="text" id="números" placeholder="Array de enteros">
+        <button>Ejemplo</button>
+    </p>
+    <p>
+        <label for="valor">Valor:</label>
+        <input type="number" name="valor" id="valor" value=0>
+
+        <label for="posición">Posición del Array:</label>
+        <input type="number" name="posición" id="posición" value=4 min=0>
+        <button>Insertar</button>
+    </p>
+    <p><button>Reiniciar</button></p> 
+    <div id="resultado"></div>
+
+    <script>
+        let botones=document.getElementsByTagName("button");
+        let campoPos=document.getElementById('posición');
+        window.setInterval(actualizarMax, 800); //Comprueba cada segundo aprox si cambió el campo de números para limitar la posición máxima a insertar
+
+        // Función botones
+        botones[0].addEventListener('click',()=>{
+            document.getElementById("números").value="-4,-3,-2,-1,1";
+        })
+        botones[1].addEventListener('click',()=>{
+            let números=document.getElementById("números").value;
+            let valor=document.getElementById('valor').value;
+            let posición=document.getElementById('posición').value;
+            let array=[];
+
+            if(números.length!=0 && posición.length!=0 && valor.length!=0){
+                let array=números.split(",");
+                if(posición>array.length-1){ //Si vamos a insertar al final
+                    array.push(valor);
+                }
+                else if(posición==0){ //Si vamos a insertar al principio
+                    let primero=[valor];
+                    array=primero.concat(array);
+                }
+                else{ //Si vamos a insertar por en medio
+                    for(i in array){
+                        if(i==posición){
+                            let aux=array[i];
+                            array[i]=valor;
+                            array.push(aux);
+                            while(array[++i]!=null){ //Si hay más números que desplazar
+                                aux=array[i];
+                                array.splice(i,1);
+                                array.push(aux); 
+                            }
+                        }
+                    }
+                }
+                document.getElementById('resultado').innerHTML=array;
+            }
+            else{
+                document.getElementById('resultado').innerHTML="<p style='color: red'>Rellena los campos</p>";
+            }  
+        })
+        botones[2].addEventListener('click',()=>{
+            document.getElementById("números").value=null;
+            document.getElementById("valor").value=null;
+            document.getElementById("posición").value=null;
+        })
+
+        function actualizarMax(){
+            let números = document.getElementById("números").value;
+            let posición=document.getElementById('posición').value;
+            if(números!=""){
+                let array=números.split(",");
+                campoPos.setAttribute("max", `${array.length}`);
+                if(posición>array.length){
+                    document.getElementById('posición').value=array.length;
+                }
+            }
+            else{
+                campoPos.setAttribute("max", 0);
+            }
+        }
+    </script>
+</body>
+</html>

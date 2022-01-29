@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Realizar una pagina web donde dispondremos de un formulario con 
+    un label y un input para introducir un nombre tambien de un campo desplegable select 
+    donde podremos
+seleccionar un numero del 1 al 78 este se debe 
+generar por código java script poner tambien su label-->
+    <form action="#">
+        
+        <label for="nombre">nombre</label>
+        <input type="text" name= "nombre">
+        <input type="submit">
+        <label for="numero">Seleccona un número:</label>
+        
+        <select name="numero" id="numero">
+        
+            <script>
+             //   let n=1; //numero
+            /*   while(n<=78){
+                 document.write(`<option> ${n} </option> `);
+                    n++;
+            }
+              */
+                for (let n=1; n<=78 ; n++)
+                    //if(n%2)
+                       // document.write(`<option> ${n} </option> `);
+                     document.write( n%2 ? (`<option> ${n} </option> `) : "" );
+
+                    
+                
+            
+
+
+            </script>
+        </select>
+        
+    </form>
+</body>
+</html>

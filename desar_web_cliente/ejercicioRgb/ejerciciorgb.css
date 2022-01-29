@@ -1,0 +1,32 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: content-box;
+}
+.contenedor{
+     background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    
+}
+#color{
+    margin: 3em;
+    width: 80%;
+}
+#color> div{
+    
+    width: 100%;
+    border: 2px solid black;
+    padding: 1em 1em 4em 1em;
+}
+#datos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+

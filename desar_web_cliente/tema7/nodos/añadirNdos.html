@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cabecera</h1>
+    <div class="contenedor">
+        <p>primero</p>
+    </div>
+    <button>insertar texto</button><input type="text">
+    <span>Reemplazar</span>
+    <strong id="eli">Eliminar</strong>
+    <script>
+        let elemento;
+        let donde = document.getElementsByClassName('contenedor')[0];
+        let boton = document.getElementsByTagName('button')[0];
+        let texto=document.getElementsByTagName('input')[0];
+        let reem=document.getElementsByTagName('span')[0];
+        let eli=document.getElementById('eli');
+
+
+        boton.addEventListener('click', () => {
+            elemento = document.createElement("p");
+            elemento.style.color = "pink";
+            elemento.textContent = texto.value;
+            //donde.appendChild(elemento);
+            donde.insertBefore(elemento,donde.children[Math.round(donde.children.length/2)])
+        })
+
+        reem.addEventListener('click',()=>{
+            let h1=document.getElementsByTagName('h1')[0];
+            let echado;
+            echado=donde.replaceChild(h1,donde.lastElementChild);
+            document.getElementsByTagName('body')[0].appendChild(echado);
+        })
+
+        eli.addEventListener('click',()=>{
+            donde.removeChild(donde.firstElementChild)
+        })
+        setinteval()
+    </script>
+</body>
+
+</html>

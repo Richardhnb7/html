@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rojo {
+            background-color: red;
+        }
+
+        .verde {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+   <h1 class="verde" >texto</h1>
+
+    <script>
+        /*
+        
+        el set interval sirve para ejecutar algo cada cierto tiempo 
+
+        */
+        let color_inicial = true;
+        let cont = 0;
+       
+       
+
+        //funcion de cambio de color
+        function color(c) {
+             let c1=document.getElementsByTagName('h1')[0]
+
+
+            c ? c1.classList.replace('rojo','verde') : c1.classlist.replace('verde','rojo')
+        } //empieza por el verde porque empieza comofalso no como verdadero
+        //ejecuta uno y otro dependiendo del valor que tenga 
+
+        function cambiarTexto(t) {
+            //let h1 = document.getElementById
+        }
+
+        var alarma = setInterval(() => { //ejecuta sdto cada 5 segundos
+            color_inicial =! color_inicial; //lo niega y vale falso ,y va cambiando el valor 
+            color(color_inicial)
+        }, 1000)
+    </script>
+</body>
+
+</html>

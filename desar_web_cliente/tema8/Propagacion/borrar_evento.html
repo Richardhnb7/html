@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 300px;
+            width: 90%;
+            background-color: burlywood;
+            border: 1px solid black;
+            padding: 1em;
+        }
+        h1{
+            padding: 2em;
+            border: 1px solid black;
+            background-color: pink;
+
+        }
+        span{
+            padding: 1em;
+            border: 1px solid black;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>
+            <span>Pulsa aqui</span>
+        </h1>
+        
+    </div>
+    <button >QuitarClick div</button>
+    <script>
+        let div=document.querySelector('div')
+        let h1=document.getElementsByTagName('h1')[0]
+        let span=document.querySelectorAll('span')[0]
+       
+        function saludaDiv() {
+            console.log('click en el div')
+        }
+
+        div.addEventListener('click',saludaDiv)
+
+        h1.addEventListener('click',()=>{
+            console.log('click en el h1')
+            
+        })
+
+        span.addEventListener('click',()=>{
+            console.log('click en el spam')
+
+        })
+
+        document.getElementsByTagName('button')[0].removeEventListener('click',saludaDiv)
+
+    </script>
+</body>
+</html>

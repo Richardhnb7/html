@@ -1,0 +1,72 @@
+<!ELEMENT paginaWeb (html, head, body)>
+    <!ELEMENT html (#PCDATA) >
+    <!ELEMENT head (base?, link?, meta?, noscript?, script?, style?, title )>
+        <!ELEMENT base (#PCDATA)>
+            <!ATTLIST base id  ID #IMPLIED>
+            <!ATTLIST base title CDATA #IMPLIED>
+            <!ATTLIST base onclick CDATA #REQUIRED>
+            <!ATTLIST base style CDATA #REQUIRED>
+        <!ELEMENT link (#PCDATA)>
+            <!ATTLIST link id  ID #IMPLIED>
+            <!ATTLIST link title CDATA #IMPLIED>
+            <!ATTLIST link onclick CDATA #REQUIRED>
+            <!ATTLIST link style CDATA #REQUIRED>
+        <!ELEMENT meta (#PCDATA)>
+            <!ATTLIST meta id  ID #IMPLIED>
+            <!ATTLIST meta title CDATA #IMPLIED>
+            <!ATTLIST meta onclick CDATA #REQUIRED>
+            <!ATTLIST meta style CDATA #REQUIRED>
+        <!ELEMENT noscript (#PCDATA)>
+            <!ATTLIST noscript id  ID #IMPLIED>
+            <!ATTLIST noscript title CDATA #IMPLIED>
+            <!ATTLIST noscript onclick CDATA #REQUIRED>
+            <!ATTLIST noscript style CDATA #REQUIRED>
+        <!ELEMENT script (#PCDATA)>
+            <!ATTLIST script id  ID #IMPLIED>
+            <!ATTLIST script title CDATA #IMPLIED>
+            <!ATTLIST script onclick CDATA #REQUIRED>
+            <!ATTLIST script style CDATA #REQUIRED>
+        <!ELEMENT style (#PCDATA)>
+            <!ATTLIST style id  ID #IMPLIED>
+            <!ATTLIST style title CDATA #IMPLIED>
+            <!ATTLIST style onclick CDATA #REQUIRED>
+            <!ATTLIST style style CDATA #REQUIRED>
+        <!ELEMENT title (#PCDATA)>
+            <!ATTLIST tittle id  ID #IMPLIED>
+            <!ATTLIST tittle title CDATA #IMPLIED>
+            <!ATTLIST tittle onclick CDATA #REQUIRED>
+            <!ATTLIST tittle style CDATA #REQUIRED>
+    <!ELEMENT body (a*, hr*, img*, h1*, h6*, p*, strong*, sub*, sup*, ol*, ul*, table*, form*)>
+        <!ELEMENT a (#PCDATA)>
+            <!ATTLIST a href CDATA #IMPLIED>
+            <!ATTLIST a href CDATA #IMPLIED>
+        <!ELEMENT hr (#PCDATA)>
+        <!ELEMENT img (#PCDATA)>
+            <!ATTLIST img src CDATA #IMPLIED>
+            <!ATTLIST img alt CDATA #IMPLIED>
+            <!ATTLIST img widht CDATA #IMPLIED>
+            <!ATTLIST img height CDATA #IMPLIED>
+
+        <!ELEMENT h1 (#PCDATA)>
+            <!ATTLIST h1 left CDATA #IMPLIED>
+            <!ATTLIST h1 center CDATA #IMPLIED>
+            <!ATTLIST h1 right CDATA #IMPLIED>
+        <!ELEMENT h6 (#PCDATA)>
+            <!ATTLIST h6 left CDATA #IMPLIED>
+            <!ATTLIST h6 center CDATA #IMPLIED>
+            <!ATTLIST h6 right CDATA #IMPLIED>
+        <!ELEMENT p (#PCDATA)>
+        <!ELEMENT strong (#PCDATA)>
+        <!ELEMENT sub (#PCDATA)>
+        <!ELEMENT ol (li+)>
+            <!ELEMENT li (#PCDATA)>
+        <!ELEMENT ul (li+)>
+        <!ELEMENT table (#PCDATA)>
+            <!ATTLIST table align CDATA #IMPLIED>
+            <!ATTLIST table border CDATA #IMPLIED>
+            <!ATTLIST table height CDATA #IMPLIED>
+            <!ATTLIST table width CDATA #IMPLIED>
+        <!ELEMENT form (#PCDATA)>
+            <!ATTLIST form action CDATA #IMPLIED>
+            <!ATTLIST form method CDATA #IMPLIED>
+            <!ATTLIST form enctype CDATA #IMPLIED>

@@ -1,0 +1,27 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div{
+    border-bottom: 2px solid black;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    
+}
+img{
+    float: right;
+width: 140px;
+}
+.datos>p{
+    margin-left: 2.5em ;
+}
+.formacion>ul>li{
+    padding-bottom: 1em;
+}
+.experiencia>ul>li{
+    padding-bottom: 1em;
+}
+span{
+    padding-left: 2.5em;
+}

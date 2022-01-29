@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ejerciciorgb.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div id="color" >
+            
+
+        </div>
+        <div id="datos">
+            
+            <div id="inp">
+                <input id="rojo" type="text" placeholder="canal rojo los valores son de 0 a 255" size="30">
+                <input id="verde" type="text" placeholder="canal verde los valores son de 0 a 255" size="30">
+                <input id="azul" type="text" placeholder="canal azul los valores son de 0 a 255" size="30">
+                <input id="alfa" type="text" placeholder="canal alfa los valores son de 0 a 1" size="30">
+            </div>
+            <button id="pintar">pintar</button>
+        </div>
+    </div>
+    <script>
+        let color=document.getElementById('color');
+        let pintar=document.getElementById('pintar'); 
+        let rojo=document.getElementById('rojo');
+        let verde=document.getElementById('verde');
+        let azul=document.getElementById('azul');
+        let alfa=document.getElementById('alfa');
+        let array=[]
+       
+         
+        function intro(colores){
+            valor=parseInt(colores.value)
+            array.push(valor)
+            return  valor;
+        }
+
+        pintar.addEventListener('click',()=>{
+            intro(rojo)
+            intro(verde)
+            intro(azul)
+            intro(alfa)
+            color.innerHTML=`<div style="background-color: rgba(${array.join(',')});"></div>`
+        })   
+    </script>
+</body>
+</html>

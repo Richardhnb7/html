@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE valores SYSTEM "tabla_periodica.dtd">
+<valores>
+    <elemento>
+        <estado>Gaseoso</estado>
+        <nombre>Hidrógeno</nombre>
+        <simbolo>H</simbolo>
+        <numero-atomico>1</numero-atomico>
+        <peso-atomico>1.00794</peso-atomico>
+        <punto-ebullicion unidades="grados kelvin">20.28</punto-ebullicion>
+        <densidad unidades="gr/cm3">0.0899</densidad>
+    </elemento>
+    <elemento>
+        <estado>Sólido</estado>
+        <nombre>Boro</nombre>
+        <simbolo>B</simbolo>
+        <numero-atomico>5</numero-atomico>
+        <peso-atomico>10.811</peso-atomico>
+        <punto-ebullicion unidades="grados centigrados">4000</punto-ebullicion>
+        <densidad unidades="gr/cm3">2.34</densidad>
+    </elemento>
+    <elemento>
+        <estado>Sólido</estado>
+        <nombre>Hierro</nombre>
+        <simbolo>Fe</simbolo>
+        <numero-atomico>26</numero-atomico>
+        <peso-atomico>55.845</peso-atomico>
+        <punto-ebullicion unidades="grados centigrados">2862</punto-ebullicion>
+        <densidad unidades="gr/cm3">7.847</densidad>
+    </elemento>
+
+    <elemento>
+        <estado>Solido</estado>
+        <nombre>Sodio</nombre>
+        <simbolo>Na</simbolo>
+        <numero-atomico>11</numero-atomico>
+        <peso-atomico>22.989</peso-atomico>
+        <punto-ebullicion unidades="grados centigrados">882.8</punto-ebullicion>
+        <densidad unidades="gr/cm3">0.97</densidad>
+    </elemento>
+</valores>

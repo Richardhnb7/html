@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UFT-8"?>
+<datos_ciudades>
+    <ciudad>
+        <nombre>Nueva Delhi</nombre>
+        <pais>India</pais>
+        <continente>Asia</continente>
+    </ciudad>
+    <ciudad>
+        <nombre>Lisboa</nombre>
+        <pais>Portugal</pais>
+        <continente>Europa</continente>
+    </ciudad>
+    <ciudad>
+        <nombre>El Cairo</nombre>
+        <pais>Egipto</pais>
+        <continente>Africa</continente>
+    </ciudad>
+</datos_ciudades>

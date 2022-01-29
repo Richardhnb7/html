@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UFT-8"?>
+<datos>
+    <Ciudad>Pamplona</Ciudad><!--para correguirlo he cambiado la C por c en </ciudad> -->
+    <dia>18</dia><!--se ha quitado la tilde de </dia>-->
+    <mes>6</mes><!--he colcado bien la / de </mes>-->
+    <ciudad>pamplona</ciudad><!-- he puesto el mismo nombre en la etiqueta de inicio y de final-->
+    <_rojo/><!-- he puesto una / al final de la etiqueta-->
+    <Doscolores>rojo y verde</Doscolores><!-- he cambiado el 2 por letras en vez de numeros-->
+    <Aficiones>cine. bailar, nadar</Aficiones><!-- he quitados los espacios que habia en la etiqueta-->
+    <persona><nombre>Elsa</nombre></persona><!-- he colocado bien las etiquetas-->
+    <color_favorito>azul</color_favorito><!-- he sustituido el espacio dentro de la etiqutea por un (_) -->
+</datos>

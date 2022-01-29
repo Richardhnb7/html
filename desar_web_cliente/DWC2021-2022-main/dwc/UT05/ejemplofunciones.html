@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        /*
+        function nombre_funcion(parametros){
+
+            return
+        }*/
+
+        /*
+        function triple(n){
+            return n*3;
+        }
+
+        console.log(triple(3));
+        */
+
+        //Asignar funciones a variables
+        
+        function triple(n){
+            return n*3;
+        }
+        
+        /*funciones flecha
+
+         let tr = x => x*3;
+         console.log(tr(4))
+
+         let media = (x,y) =>(x+y)/2;
+         console.log(media(3,6));
+         
+         let saludo = () =>{
+             console.log("hola");
+         }
+         saludo();
+
+         const sumatorio = (n) => {
+             let acum=0;
+             for(let i = n; i > 0; i--)
+                acum+=i;
+             return acum;
+         }
+         console.log(sumatorio(2));
+
+         const factorial = (n) => {
+             let acum =1;
+             for (let i = n; i > 0; i--)
+                acum*=i;
+            return acum;
+         }
+         console.log(factorial(3));
+         */
+
+         //Ambito de las variables
+/*
+         function ambito(){
+             const a = 9;
+             let b = 9;
+             var c =9;
+             console.log("soy la funcion ambito") 
+         }
+         ambito();
+         console.log(a);
+         console.log(b);
+         console.log(c);
+*/
+       /*  function ambito2(){
+             if(!true){
+                const a = 9;
+                let b = 9;
+                var c =9;
+             }*/
+           /* console.log(a);
+           // console.log(b);
+            console.log(c); 
+            }
+            ambito2();*/
+        
+        ;
+
+        //Paso por valor y por referencia
+        let y = 5;
+        function valor(x){
+            x=10;
+            console.log(' x ya vale 10')
+        }
+        valor(y);
+        console.log(y);
+        
+        function variable(n){
+            n [0] = 9;
+        }
+        numeros=[1,2,3,4];
+        variable(numeros);
+        console.log(numeros)
+        numeros2=[4,5,6];
+        numeros = numeros2;
+        numeros2[1]=9999;
+        console.log(numeros);
+
+        numeros=[1,2,3];
+        function variable2(n){
+            let n2=[10,11,12]
+            n=n2;
+        }
+        console.log(variable2(numeros));
+        //valores por defecto de una funcion
+
+        function saluda(nombre,texto=" Buenos Dias", ciudad="yecla"){
+            console.log(`Hola ${nombre} ${texto} hoy hace bueno en ${ciudad}`)
+        }
+        saluda("miguel","jumilla")
+        saluda("Miguel", "buenas tardes")
+        //Parametros variables en las funciones
+        function mediaguay(x,y, ...mas){
+            console.log(`${x} | ${y} Esto es un array ${mas}`)
+        }
+        mediaguay(1,2,3,4,5,6)
+
+        function mediaguay2( ...mas){
+            let acum = 0;
+            for (let num of mas)
+                acum+=num
+            return acum/mas.length
+        }
+        console.log(mediaguay2(2,2,2,2))
+
+        //funciones callback
+
+        function calcula(datos,operacion){
+            console.log(operacion(datos));
+        }
+
+        function doble (x){
+            return x*2;
+        }
+        calcula(3,doble);
+        calcula(4,triple);
+    </script>
+    
+</body>
+</html>

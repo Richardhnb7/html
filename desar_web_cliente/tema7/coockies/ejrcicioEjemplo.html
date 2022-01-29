@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coockie</title>
+</head>
+<body>
+    <h1>has entrado <span id="contador">0</span></h1>
+
+    <p>Color de Fondo</p>
+    <input type="text" id="vCookie">
+    <p>
+        <button id="estCookie">Establecer Fondo</button>
+        <button id="mosCookie">Mostrar</button>
+    </p>
+    
+    <script>
+
+        let valorCookie=document.getElementById("vCookie")
+
+        let bEstablecer=document.getElementById("estCookie")
+        let bMostar=document.getElementById("mosCookie")
+
+        bEstablecer.addEventListener('click',()=>{
+            document.cookie=`fondo=${valorCookie.value}`
+            document.body.style.backgroundColor=valorCookie.value;//pondra de un color el fondo
+        })
+        bMostar.addEventListener('click',()=>{
+            alert(document.cookie)
+            alert(sacarVisitas())
+        })
+
+        if (!estaLaCookie(/(fondo=)([a-z]+)/)){
+        
+            document.body.style.backgroundColor=sacarColor();
+        }
+
+        if (!estaLaCookie(/(visitas=)([0-9]+)/)){
+            alert("no hay cookies")
+            document.cookie='visitas=1'
+        }else{
+            let valor_nuevo =parseInt(sacarVisitas())+1
+            //alert((valor_nuevo))
+            document.cookie=`visitas=${valor_nuevo}`
+            document.getElementById('contador').textContent=valor_nuevo;    
+        }
+        function sacarColor() {
+            let expr=/(fondo=)([a-z]+)/ //comprueba en partes la primera y luego la segunda 
+            return expr.exec(document.cookie)[2]//aqui se queda con el color
+        }
+        function sacarVisitas() {
+            let expr = /(visitas=)([0-9]+)/
+            let res=expr.exec(document.cookie)[2]
+            return res;
+        }
+        //exp es una expresion para determinar si esta esa cadena como
+        //cookie
+        function estaLaCookie(expr){//con expresiones regulares
+            //let expr=/visitas=[0-9]+/
+            return expr.test(document.cookie);
+        }        
+
+    </script>
+</body>
+</html>

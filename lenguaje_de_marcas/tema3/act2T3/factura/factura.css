@@ -1,0 +1,70 @@
+body{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0rem auto;
+    border: 1px solid black;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+header>img {
+    width: 200px;
+}
+header>p {
+    text-align: center;
+}
+header>div>form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.datos>form>p>label{
+    padding: 0% 0.5% 0% 1%;
+}
+.datos{
+    margin: 1rem;
+    border:  1px solid black;
+    border-radius: 1rem;
+}
+.datos>h2, .factura>h2{
+    text-align: center;
+}
+.factura{
+    margin: 1rem;
+    border:  1px solid black;
+    border-radius: 1rem;
+}
+table.primero{
+    table-layout: auto;
+    width: 95%;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+td{
+    border: 1px solid black;
+    border-collapse:collapse;
+}
+table.segundo{
+    left: 67.45% ;
+    position: relative;
+    table-layout: auto;
+    width: 30%;
+    border-collapse: collapse;
+    margin: 1rem 0rem;
+}
+h3{
+    text-align: center;
+}
+footer>form{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    width: 100%;
+}

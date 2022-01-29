@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let nuevo = 0, viejo = -1, suma, i, Contador = 0;
+        while (nuevo > viejo) {
+            viejo = nuevo;
+            nuevo = parseInt(prompt("Dame un numero"));
+            console.log(`Num nuevo ${nuevo} Num viejo ${viejo}\n`)
+            console.log(nuevo);
+            if (isNaN(nuevo)) {
+                nuevo = parseInt(prompt("Dame un numero no una letra"));
+                viejo = nuevo;
+                console.log(nuevo);
+
+                Contador++;
+            }
+
+            viejo = nuevo;
+            nuevo = parseInt(prompt("Dame otro numero"));
+            console.log(`Num nuevo ${nuevo} Num viejo ${viejo}\n`)
+
+            if (isNaN(nuevo)) {
+                nuevo = parseInt(prompt("Dame un numero no una letra"));
+                viejo = nuevo;
+                console.log(nuevo);
+
+                Contador++;
+            }
+            Contador++;
+
+            for (i in nuevo) {
+                suma = nuevo + viejo;
+                console.log(suma);
+
+            }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

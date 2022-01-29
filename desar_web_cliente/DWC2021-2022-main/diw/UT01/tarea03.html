@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <h1>Formulario:</h1>
+    <form action="#" method="GET">
+        <fieldset>
+            <legend> Datos Personales </legend>
+
+            <p>
+                <label for="nombre">Nombre</label>
+                <input required="true" placeholder="Introduce el nombre" id="nombre" type="text" name="vnombre">
+            </p>
+            <p>
+                <label for="fechanacim">Fecha de nacimiento</label>
+                <input disabled="true" id="fechanacim "type="date" name="vfecha">
+            </p>
+    
+            <p>
+                <label for="telefono">Numero de telefono</label>
+                <input autofocus pattern="[0-9]{9}" id="telefono" type="tel" name="vtelf">
+            </p>
+
+            <p>
+                Selecciona tu ciudad  <br>
+                <select name="ciudad" id="">
+                    <optgroup label="España">
+                        <option value="Yecla">Yecla</option>
+                        <option selected value="Jumilla">Jumilla</option>
+                        <option value="Almansa">Almansa</option>
+                        <option value="Caudete">Caudete</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p><input type="file" multiple="true" ></p>
+            <p><input type="mail" name="correo"></p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Deportes</legend>
+            <p>
+                <label for="deporte">Deporte Favorito</label>
+                <input id="deporte" type="text" name="vdepor">
+            </p>
+    
+            <p>
+                <label for="horaspracticadas">Horas practicadas del deporte</label>
+                <input min="3" max="10" step="2" id="horaspracticadas" type="number" name="vhoraspracticadas">
+            </p>
+    
+            <p>
+                <label for="deporfav">Deportista favorito que realice ese deporte</label>
+                <input maxlength="10" id="deportfav" type="text" name="vdeportfav">
+            </p>
+    
+           
+    
+            
+                <label for="descri">Información del deportista</label>
+            <p>
+                <textarea name="descrip" id="descri" cols="50" rows="2"></textarea>
+            </p>
+        
+        </fieldset>
+
+        <p>
+            <label for="buscad">Busca deporte</label>
+            <input type="search" id="buscad">
+        </p>
+       
+        <p>
+            <label for="clave">Clave</label>
+            <input id="clave "type="password">
+        
+        </p>
+
+
+        <input type="submit" value="Enviar Datos">
+    </form>
+
+</body>
+</html>

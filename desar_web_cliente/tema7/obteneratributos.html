@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .azul{
+            color: blue;
+        }
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="red">uno</li>
+        <li class="azul" >uno</li>
+        <li class="azul" hidden >uno</li>
+        <input type="text" id="texto" value="Daw" placeholder="introduce tu ciclo" disabled>
+    </ul>
+    <script>
+        let lis=document.getElementsByClassName('azul');
+        let lis2=document.getElementsByTagName('li')
+        let lis3=document.querySelector('.azul')
+        let lis4=document.querySelectorAll('ul li.azul')
+        
+
+        //para mostrar el valro de un atributo se utiliza el metodo getAttribute
+        for(li of lis4){
+            console.log(li.getAttribute('class'))
+        }
+
+        //para modificar eñ valor de un atributo se utiliza el metodo setAtribute
+        lis2[1].setAttribute('class', "red")
+
+        //para eliminar un atributo se utiliza eremoveAtttribute
+        console.log(lis2[2].getAttribute('hidden'))
+        lis2[2].removeAttribute('hidden')
+
+        //para pregunta4r si un elemento tiene una propiedad se utiliza el metodo 
+        // hasAtttribute
+        console.log(lis2[2].hasAttribute('hidden'))
+        console.log(lis2[2].hasAttribute('class'))
+
+        //para los atributod con hidden enable poddemos utilizar el metodo 
+        //toggleAtribute para invertir su valor
+        lis[0].addEventListener('click',()=>{
+            lis[0].toggleAttribute('hidden');
+        })
+        //obtener todos los atributos de una etiqueta, se usda la propiedad
+        //attributes es una coleccion
+        for(at of document.getElementById('texto').attributes)
+            console.log(`el atributo ${at.name} : ${at.value}`)
+
+
+    </script>
+</body>
+</html>
