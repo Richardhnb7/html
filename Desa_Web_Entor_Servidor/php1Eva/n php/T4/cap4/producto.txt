@@ -1,0 +1,3 @@
+sal,20 paquetes de 1kg cada uno,20,3,1
+Cerveza Alhambra tercio,24 botellas de 33cl ,10,12,3
+Huevos,docena de huevos m,23,12,1
