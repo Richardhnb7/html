@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    xmlns="./editoriales.xml" 
+    targetNamespace="./editoriales.xml" 
+    elementFormDefault="qualified">
+    <xs:element name="editoriales">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="editorial">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="nombre" type="xs:string"/>
+                    <xs:element name="direccion" type="xs:string"/>
+                    <xs:element name="email" type="xs:string"/>
+                    <xs:element name="paginaWeb" type="xs:string"/>
+                    <xs:element name="telefono" type="xs:integer"/>
+                    <xs:element name="fax" type="xs:integer"/>
+                    <xs:element name="libro">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="titulo" type="xs:string"/>
+                                <xs:element name="autor" type="xs:integer"/>
+                                <xs:element name="fecha" type="xs:integer"/>                                
+                            </xs:sequence>
+                            <xs:attribute name="isbn" type="xs:string" use="required"/>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    </xs:element>
+</xs:schema>

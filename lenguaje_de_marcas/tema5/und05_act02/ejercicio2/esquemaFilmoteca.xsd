@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-    xmlns="./valores.xml" 
-    targetNamespace="./valores.xml" 
+    xmlns="./filmoteca.xml" 
+    targetNamespace="./filmoteca.xml" 
     elementFormDefault="qualified">
     <xs:element name="filmoteca">
         <xs:complexType>
@@ -9,7 +9,7 @@
                 <xs:element name="pelicula">
                     <xs:complexType mixed="true">
                         <xs:sequence>
-                            <xs:element name="titulo" >
+                            <xs:element name="titulo" minOccurs="1" maxOccurs="unbounded" >
                                 <xs:complexType>
                                     <xs:simpleContent>
                                         <xs:extension base="xs:string">

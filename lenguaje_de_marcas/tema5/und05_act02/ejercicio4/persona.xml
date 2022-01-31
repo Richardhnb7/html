@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns="./persona.xml" 
+    xsi:SchemaLocation="./persona.xsd">
+    <persona>
+        <nombre>Alvaro</nombre>
+        <apelidos>Maestre Santa</apelidos>
+        <direccion>c/ maestro mora</direccion>
+        <dni>49437311j</dni>
+        <telefono>618144606</telefono>
+        <cod_postal>30510</cod_postal>
+        <ciudad>Yecla</ciudad>
+        <provincia>Murcia</provincia>
+    </persona>
+    <persona>
+        <nombre>Marta</nombre>
+        <apelidos>Carpena Mas</apelidos>
+        <direccion>c/ alferez maestre</direccion>
+        <dni>45637311j</dni>
+        <telefono>618123506</telefono>
+        <cod_postal>30510</cod_postal>
+        <ciudad>Yecla</ciudad>
+        <provincia>Murcia</provincia>
+    </persona>
+    <persona>
+        <nombre>Raquel</nombre>
+        <apelidos>Ibañez </apelidos>
+        <direccion>c/ santa barbara</direccion>
+        <dni>12347311j</dni>
+        <telefono>618144098</telefono>
+        <cod_postal>30510</cod_postal>
+        <ciudad>Yecla</ciudad>
+        <provincia>Murcia</provincia>
+    </persona>
+
+</personas>
