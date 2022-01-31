@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editoriales xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="./valores.xml" xsi:SchemaLocation="./valores.xsd">
+    <editorial>
+        <nombre></nombre>
+        <direccion></direccion>
+        <email></email>
+        <paginaWeb></paginaWeb>
+        <telefon></telefon>
+        <fax></fax>
+        <libro >
+            
+        </libro>
+    </editorial>
+        
+    
+</editoriales>

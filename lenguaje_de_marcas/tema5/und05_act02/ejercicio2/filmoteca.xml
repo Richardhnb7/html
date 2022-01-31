@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <filmoteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="./esquemaFilmoteca.xsd"
+  xmlns="./filmoteca.xml"
   xsi:SchemaLocation="./esquemaFilmoteca.xsd">
   <pelicula codigo='p0001'>
     <titulo idioma="es">Cinema Paradiso</titulo>
