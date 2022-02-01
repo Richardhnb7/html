@@ -1,0 +1,46 @@
+{
+    "editoriales":[{
+        "nombre":"circulo rojo",
+        "direccion":"Salida 429 de la A7 - C/ Chillida, 4, planta 2 oficina 1",
+        "email":"info@editorialcirculorojo.com",
+        "pagina_web":"https://editorialcirculorojo.com/",
+        "telefono":"93 178 0614",
+        "fax":"941 446 227",
+        "libro":[
+            {
+                "isbn":"9788411152723",
+                "titulo":"Isaac Nirtt y las mil bestias",
+                "autor":"Paly",
+                "fecha":"2022"
+            },
+            {
+                "isbn":"9788411153119",
+                "titulo":"Vuelo sin ti",
+                "autor":"María Sierra",
+                "fecha":"2022"
+            }
+        ]
+    },
+    {
+        "nombre":"Planeta de libros",
+        "direccion":"Av. Diagonal, 662-664",
+        "email":"info@editorialplanetalibros.com",
+        "pagina_web":"https://www.planetadelibros.com/",
+        "telefono":"93 178 0423",
+        "fax":"981 476 217",
+        "libro":[
+            {
+                "isbn":"97884111533414",
+                "titulo":"nfo@editorialcirculorojo.com",
+                "autor":"David Jiménez",
+                "fecha":"2022"
+            },
+            {
+                "isbn":"9788434533119",
+                "titulo":"Por si las voces vuelven",
+                "autor":"Ángel Martín",
+                "fecha":"2022"
+            }
+        ]
+    }
+]}

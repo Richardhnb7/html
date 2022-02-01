@@ -1,0 +1,62 @@
+{
+    "personas":[{
+        "nombre":"Andrea",
+        "apellidos":"Martínez lópez",
+        "fechaDeNacimiento":"12/12/20",
+        "edad":"21",
+        "direccion":[{
+            "tipo":"primaria",
+            "nombre":"san roque",
+            "numero":"22",
+            "ampliacion":"cuarto b"
+        }],
+        "población":"",
+        "provincia":"",
+        "idiomas":[
+            "Frances"
+        ]
+    },
+    {
+        "nombre":"Ignacio",
+        "apellidos":"Pérez Molina",
+        "fechaDeNacimiento":"20/12/00",
+        "edad":"21",
+        "direccion":[{
+            "tipo":"principal",
+            "nombre":"eugeniio garcia",
+            "numero":"10",
+            "ampliacion":"bajo derecha"
+        }],
+        "población":"yecla",
+        "provincia":"murcia",
+        "idiomas":[
+            "frances"
+            
+        ]
+    },
+    {
+        "nombre":"Alvaro",
+        "apellidos":"Maestre Santa",
+        "fechaDeNacimiento":"11/02/98",
+        "edad":"24",
+        "direccion":[{
+            "tipo":"principal",
+            "nombre":"san marcos",
+            "numero":"16",
+            "ampliacion":"primero izquierda"
+        },{
+            "tipo":"secundaria",
+            "nombre":"san fernado",
+            "numero":"22",
+            "ampliacion":"segundo c"
+        }
+    
+        ],
+        "población":"yecla",
+        "provincia":"murcia",
+        "idiomas":[
+            "ingles",
+            "frances"
+        ]
+    }
+]}
