@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+<root ptr="0x561855d058c0" id="0" symbol="11SwRootFrame" lower="1">
+ <sfxViewShells>
+  <SwView>
+   <SfxViewShell ptr="0x561855cf3760" id="0"/>
+   <SwCursorShell>
+    <SwViewShell/>
+    <m_pCurrentCursor>
+     <SwPaM>
+      <point>
+       <SwPosition nNode="12" nContent="0"/>
+      </point>
+     </SwPaM>
+    </m_pCurrentCursor>
+   </SwCursorShell>
+  </SwView>
+ </sfxViewShells>
+ <infos>
+  <bounds left="284" top="284" width="18669" height="33960" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+  <prtBounds left="0" top="0" width="18669" height="33960"/>
+ </infos>
+ <page ptr="0x561855d05b70" id="1" symbol="11SwPageFrame" next="24" upper="0" lower="2">
+  <page_status ValidFlyLayout="true" ValidFlyContent="true" ValidFlyInCnt="true" ValidLayout="true" ValidContent="true"/>
+  <infos>
+   <bounds left="7047" top="284" width="11906" height="16838" mbFixSize="true" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+   <prtBounds left="1134" top="1134" width="9638" height="14570"/>
+  </infos>
+  <body ptr="0x561855bcc450" id="2" symbol="11SwBodyFrame" upper="1" lower="3">
+   <infos>
+    <bounds left="8181" top="1418" width="9638" height="14570" mbFixSize="true" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+    <prtBounds left="0" top="0" width="9638" height="14570"/>
+   </infos>
+   <txt ptr="0x561855d05e30" id="3" symbol="11SwTextFrame" next="4" upper="2" txtNodeIndex="12" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8181" top="1418" width="9638" height="367" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="367"/>
+    </infos>
+    <Finish/>
+   </txt>
+   <txt ptr="0x561855d05fa0" id="4" symbol="11SwTextFrame" next="5" prev="3" upper="2" txtNodeIndex="13" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8181" top="1785" width="9638" height="908" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="908"/>
+    </infos>
+LENGUAJE DE MARCAS*UT05. JSON. Act03    <Text nLength="18" nType="PortionType::Text" nHeight="454" nWidth="4407" Portion="LENGUAJE DE MARCAS"/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak nWidth="4407" Line="LENGUAJE DE MARCAS*"/>
+    <Text nLength="17" nType="PortionType::Lay" nHeight="454" nWidth="3601" Portion="UT05. JSON. Act03"/>
+    <LineBreak nWidth="3601" Line="UT05. JSON. Act03"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x561855d06110" id="5" symbol="11SwTextFrame" next="6" prev="4" upper="2" txtNodeIndex="14" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8181" top="2693" width="9638" height="367" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="367"/>
+    </infos>
+Richard Nenjer    <Text nLength="14" nType="PortionType::Para" nHeight="367" nWidth="2336" Portion="Richard Nenjer"/>
+    <LineBreak nWidth="2336" Line="Richard Nenjer"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x561855d06280" id="6" symbol="11SwTextFrame" next="7" prev="5" upper="2" txtNodeIndex="15" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8181" top="3060" width="9638" height="367" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="367"/>
+    </infos>
+    <Finish/>
+   </txt>
+   <txt ptr="0x561855d063f0" id="7" symbol="11SwTextFrame" next="8" prev="6" upper="2" txtNodeIndex="16" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8181" top="3427" width="9638" height="1835" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="1835"/>
+    </infos>
+3. A partir del documento adjunto cartelera.xml obtén usando una*web de conversión on-line el equivalente en formato JSON.*a. Analiza el mismo e indica aquello que te resulte relevante*(pequeño resumen de la información que obtiene)    <Text nLength="54" nType="PortionType::Para" nHeight="367" nWidth="8647" Portion="3. A partir del documento adjunto cartelera.xml obt&#xE9;n "/>
+    <LineBreak nWidth="8647" Line="3. A partir del documento adjunto cartelera.xml obt&#xE9;n "/>
+    <Text nLength="10" nType="PortionType::Text" nHeight="367" nWidth="1842" Portion="usando una"/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak nWidth="1842" Line="usando una*"/>
+    <Text nLength="57" nType="PortionType::Text" nHeight="367" nWidth="9294" Portion="web de conversi&#xF3;n on-line el equivalente en formato JSON."/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak nWidth="9294" Line="web de conversi&#xF3;n on-line el equivalente en formato JSON.*"/>
+    <Text nLength="61" nType="PortionType::Text" nHeight="367" nWidth="9555" Portion="a. Analiza el mismo e indica aquello que te resulte relevante"/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak nWidth="9555" Line="a. Analiza el mismo e indica aquello que te resulte relevante*"/>
+    <Text nLength="47" nType="PortionType::Lay" nHeight="367" nWidth="7933" Portion="(peque&#xF1;o resumen de la informaci&#xF3;n que obtiene)"/>
+    <LineBreak nWidth="7933" Line="(peque&#xF1;o resumen de la informaci&#xF3;n que obtiene)"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x561855d06560" id="8" symbol="11SwTextFrame" next="9" prev="7" upper="2" txtNodeIndex="17" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8181" top="5262" width="9638" height="367" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="367"/>
+    </infos>
+    <Finish/>
+   </txt>
+   <txt ptr="0x561855d066d0" id="9" symbol="11SwTextFrame" next="10" prev="8" upper="2" txtNodeIndex="18" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8181" top="5629" width="9638" height="2569" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="2569"/>
+    </infos>
+Lo que me resalta a primera vista es que es una sintaxis más simple y parece que tiene menos palabras y es mas corto, los saltos de linea te los marca con \n\ \t en propiio conversor. Los atributos te los marca con (-) delante del nombre de cada atributo y que te marca el encoding del xml de esta manera &quot;#encoding&quot;: &quot;ISO-8859-1&quot; justo al final, antes del ultimo crchete.    <Text nLength="57" nType="PortionType::Para" nHeight="367" nWidth="9032" Portion="Lo que me resalta a primera vista es que es una sintaxis "/>
+    <LineBreak nWidth="9032" Line="Lo que me resalta a primera vista es que es una sintaxis "/>
+    <Text nLength="54" nType="PortionType::Lay" nHeight="367" nWidth="9086" Portion="m&#xE1;s simple y parece que tiene menos palabras y es mas "/>
+    <LineBreak nWidth="9086" Line="m&#xE1;s simple y parece que tiene menos palabras y es mas "/>
+    <Text nLength="62" nType="PortionType::Lay" nHeight="367" nWidth="9173" Portion="corto, los saltos de linea te los marca con \n\ \t en propiio "/>
+    <LineBreak nWidth="9173" Line="corto, los saltos de linea te los marca con \n\ \t en propiio "/>
+    <Text nLength="58" nType="PortionType::Lay" nHeight="367" nWidth="8923" Portion="conversor. Los atributos te los marca con (-) delante del "/>
+    <LineBreak nWidth="8923" Line="conversor. Los atributos te los marca con (-) delante del "/>
+    <Text nLength="58" nType="PortionType::Text" nHeight="367" nWidth="9596" Portion="nombre de cada atributo y que te marca el encoding del xml"/>
+    <Text nLength="1" nType="PortionType::Hole" Portion=" "/>
+    <LineBreak nWidth="9596" Line="nombre de cada atributo y que te marca el encoding del xml "/>
+    <Text nLength="15" nType="PortionType::Text" nHeight="367" nWidth="2585" Portion="de esta manera "/>
+    <Text nLength="26" nType="PortionType::Text" nHeight="367" nWidth="4375" Portion="&quot;#encoding&quot;: &quot;ISO-8859-1&quot; "/>
+    <Text nLength="16" nType="PortionType::Text" nHeight="367" nWidth="2127" Portion="justo al final, "/>
+    <LineBreak nWidth="9087" Line="de esta manera &quot;#encoding&quot;: &quot;ISO-8859-1&quot; justo al final, "/>
+    <Text nLength="25" nType="PortionType::Lay" nHeight="367" nWidth="3934" Portion="antes del ultimo crchete."/>
+    <LineBreak nWidth="3934" Line="antes del ultimo crchete."/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x561855d06840" id="10" symbol="11SwTextFrame" next="11" prev="9" upper="2" txtNodeIndex="19" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8181" top="8198" width="9638" height="643" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="643"/>
+    </infos>
+*b. Número de caracteres que ocupan ambos ficheros    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak Line="*"/>
+    <Text nLength="49" nType="PortionType::Lay" nHeight="367" nWidth="8359" Portion="b. N&#xFA;mero de caracteres que ocupan ambos ficheros"/>
+    <LineBreak nWidth="8359" Line="b. N&#xFA;mero de caracteres que ocupan ambos ficheros"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x561855d069b0" id="11" symbol="11SwTextFrame" next="12" prev="10" upper="2" txtNodeIndex="20" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8181" top="8841" width="9638" height="367" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="367"/>
+    </infos>
+    <Finish/>
+   </txt>
+   <txt ptr="0x561855d06b20" id="12" symbol="11SwTextFrame" next="13" prev="11" upper="2" txtNodeIndex="21" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8181" top="9208" width="9638" height="367" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="367"/>
+    </infos>
+el documento cartelera.json tiene 2143 caracteres    <Text nLength="49" nType="PortionType::Para" nHeight="367" nWidth="7985" Portion="el documento cartelera.json tiene 2143 caracteres"/>
+    <LineBreak nWidth="7985" Line="el documento cartelera.json tiene 2143 caracteres"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x561855d06c90" id="13" symbol="11SwTextFrame" next="14" prev="12" upper="2" txtNodeIndex="22" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8181" top="9575" width="9638" height="367" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="367"/>
+    </infos>
+el documento cartelera.xml tiene 2411 caracteres    <Text nLength="48" nType="PortionType::Para" nHeight="367" nWidth="7921" Portion="el documento cartelera.xml tiene 2411 caracteres"/>
+    <LineBreak nWidth="7921" Line="el documento cartelera.xml tiene 2411 caracteres"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x561855d06e00" id="14" symbol="11SwTextFrame" next="15" prev="13" upper="2" txtNodeIndex="23" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8181" top="9942" width="9638" height="367" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="367"/>
+    </infos>
+    <Finish/>
+   </txt>
+   <txt ptr="0x561855d06f70" id="15" symbol="11SwTextFrame" next="16" prev="14" upper="2" txtNodeIndex="24" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8181" top="10309" width="9638" height="1468" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="1468"/>
+    </infos>
+4. Convierte utilizando alguna web de conversión on-line el*documento JSON que has obtenido en el ejercicio a XML.*a. Analiza el mismo e indica aquello que te resulte relevante*(pequeño resumen de la información que obtiene)    <Text nLength="12" nType="PortionType::Text" nHeight="367" nWidth="1928" Portion="4. Convierte"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="276" nWidth="60" Portion=" "/>
+    <Text nLength="10" nType="PortionType::Text" nHeight="367" nWidth="1536" Portion="utilizando"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="276" nWidth="60" Portion=" "/>
+    <Text nLength="6" nType="PortionType::Text" nHeight="367" nWidth="1073" Portion="alguna"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="276" nWidth="60" Portion=" "/>
+    <Text nLength="3" nType="PortionType::Text" nHeight="367" nWidth="652" Portion="web"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="276" nWidth="60" Portion=" "/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="367" nWidth="394" Portion="de"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="276" nWidth="60" Portion=" "/>
+    <Text nLength="10" nType="PortionType::Text" nHeight="367" nWidth="1719" Portion="conversi&#xF3;n"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="276" nWidth="60" Portion=" "/>
+    <Text nLength="7" nType="PortionType::Text" nHeight="367" nWidth="1075" Portion="on-line"/>
+    <Text nLength="1" nType="PortionType::Text" nHeight="276" nWidth="60" Portion=" "/>
+    <Text nLength="2" nType="PortionType::Text" nHeight="367" nWidth="281" Portion="el"/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak nWidth="9078" Line="4. Convierte utilizando alguna web de conversi&#xF3;n on-line el*"/>
+    <Text nLength="54" nType="PortionType::Text" nHeight="367" nWidth="8943" Portion="documento JSON que has obtenido en el ejercicio a XML."/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak nWidth="8943" Line="documento JSON que has obtenido en el ejercicio a XML.*"/>
+    <Text nLength="61" nType="PortionType::Text" nHeight="367" nWidth="9555" Portion="a. Analiza el mismo e indica aquello que te resulte relevante"/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak nWidth="9555" Line="a. Analiza el mismo e indica aquello que te resulte relevante*"/>
+    <Text nLength="47" nType="PortionType::Lay" nHeight="367" nWidth="7933" Portion="(peque&#xF1;o resumen de la informaci&#xF3;n que obtiene)"/>
+    <LineBreak nWidth="7933" Line="(peque&#xF1;o resumen de la informaci&#xF3;n que obtiene)"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x561855d070e0" id="16" symbol="11SwTextFrame" next="17" prev="15" upper="2" txtNodeIndex="25" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8181" top="11777" width="9638" height="367" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="367"/>
+    </infos>
+    <Finish/>
+   </txt>
+   <txt ptr="0x561855d07250" id="17" symbol="11SwTextFrame" next="18" prev="16" upper="2" txtNodeIndex="26" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8181" top="12144" width="9638" height="1101" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="1101"/>
+    </infos>
+Lo que resalta del documento es que no ha cambiado nada del documento original del ejercicio anterior, y esta practicamente igual      <Text nLength="39" nType="PortionType::Text" nHeight="367" nWidth="6442" Portion="Lo que resalta del documento es que no "/>
+    <Text nLength="17" nType="PortionType::Text" nHeight="367" nWidth="3025" Portion="ha cambiado nada "/>
+    <LineBreak nWidth="9467" Line="Lo que resalta del documento es que no ha cambiado nada "/>
+    <Text nLength="54" nType="PortionType::Lay" nHeight="367" nWidth="8245" Portion="del documento original del ejercicio anterior, y esta "/>
+    <LineBreak nWidth="8245" Line="del documento original del ejercicio anterior, y esta "/>
+    <Text nLength="21" nType="PortionType::Lay" nHeight="367" nWidth="3359" Portion="practicamente igual  "/>
+    <LineBreak nWidth="3359" Line="practicamente igual  "/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x561855d073c0" id="18" symbol="11SwTextFrame" next="19" prev="17" upper="2" txtNodeIndex="27" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8181" top="13245" width="9638" height="643" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="643"/>
+    </infos>
+*b. Número de caracteres que ocupan ambos ficheros    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak Line="*"/>
+    <Text nLength="49" nType="PortionType::Lay" nHeight="367" nWidth="8359" Portion="b. N&#xFA;mero de caracteres que ocupan ambos ficheros"/>
+    <LineBreak nWidth="8359" Line="b. N&#xFA;mero de caracteres que ocupan ambos ficheros"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x561855d07530" id="19" symbol="11SwTextFrame" next="20" prev="18" upper="2" txtNodeIndex="28" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8181" top="13888" width="9638" height="367" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="367"/>
+    </infos>
+    <Finish/>
+   </txt>
+   <txt ptr="0x561855d076a0" id="20" symbol="11SwTextFrame" next="21" prev="19" upper="2" txtNodeIndex="29" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8181" top="14255" width="9638" height="367" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="367"/>
+    </infos>
+el documento cartelera.json tiene 2143 caracteres    <Text nLength="49" nType="PortionType::Para" nHeight="367" nWidth="7985" Portion="el documento cartelera.json tiene 2143 caracteres"/>
+    <LineBreak nWidth="7985" Line="el documento cartelera.json tiene 2143 caracteres"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x561855d07810" id="21" symbol="11SwTextFrame" next="22" prev="20" upper="2" txtNodeIndex="30" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8181" top="14622" width="9638" height="367" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="367"/>
+    </infos>
+el documento cartelera2.xml tiene 2411 caracteres    <Text nLength="49" nType="PortionType::Para" nHeight="367" nWidth="8122" Portion="el documento cartelera2.xml tiene 2411 caracteres"/>
+    <LineBreak nWidth="8122" Line="el documento cartelera2.xml tiene 2411 caracteres"/>
+    <Finish/>
+   </txt>
+   <txt ptr="0x561855d07980" id="22" symbol="11SwTextFrame" prev="21" upper="2" txtNodeIndex="31" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8181" top="14989" width="9638" height="734" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="734"/>
+    </infos>
+tiene la  misma cantidad de palabras que el ejercicio anterior he utilizado eta pagina https://contarcaracteres.es/    <Text nLength="54" nType="PortionType::Para" nHeight="367" nWidth="8449" Portion="tiene la  misma cantidad de palabras que el ejercicio "/>
+    <LineBreak nWidth="8449" Line="tiene la  misma cantidad de palabras que el ejercicio "/>
+    <Text nLength="33" nType="PortionType::Text" nHeight="367" nWidth="5064" Portion="anterior he utilizado eta pagina "/>
+    <Text nLength="28" nType="PortionType::Text" nHeight="367" nWidth="4358" Portion="https://contarcaracteres.es/"/>
+    <LineBreak nWidth="9422" Line="anterior he utilizado eta pagina https://contarcaracteres.es/"/>
+    <Finish/>
+   </txt>
+  </body>
+ </page>
+ <page ptr="0x561855d07c60" id="24" symbol="11SwPageFrame" prev="1" upper="0" lower="25">
+  <page_status ValidFlyLayout="true" ValidFlyContent="true" ValidFlyInCnt="true" ValidLayout="true" ValidContent="true"/>
+  <infos>
+   <bounds left="7047" top="17406" width="11906" height="16838" mbFixSize="true" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+   <prtBounds left="1134" top="1134" width="9638" height="14570"/>
+  </infos>
+  <body ptr="0x561855d07ea0" id="25" symbol="11SwBodyFrame" upper="24" lower="23">
+   <infos>
+    <bounds left="8181" top="18540" width="9638" height="14570" mbFixSize="true" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+    <prtBounds left="0" top="0" width="9638" height="14570"/>
+   </infos>
+   <txt ptr="0x561855d07af0" id="23" symbol="11SwTextFrame" upper="25" txtNodeIndex="32" WritingMode="Horizontal">
+    <infos>
+     <bounds left="8181" top="18540" width="9638" height="5505" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+     <prtBounds left="0" top="0" width="9638" height="5505"/>
+    </infos>
+    <anchored>
+     <fly ptr="0x561855d2e220" id="26" symbol="19SwFlyAtContentFrame" lower="27">
+      <infos>
+       <bounds left="8061" top="24990" width="9638" height="5157" mbFixSize="true" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+       <prtBounds left="0" top="0" width="9638" height="5157"/>
+      </infos>
+      <notxt ptr="0x561855d08240" id="27" symbol="13SwNoTextFrame" upper="26">
+       <infos>
+        <bounds left="8061" top="24990" width="9638" height="5157" mbFixSize="false" mbValidPos="true" mbValidSize="true" mbValidPrtArea="true"/>
+        <prtBounds left="0" top="0" width="9638" height="5157"/>
+       </infos>
+      </notxt>
+     </fly>
+    </anchored>
+5. Busca alguna API que pueda devolverte información sobre*alguna cuestión que te resulte de interés y que devuelva el*resultado de tus peticiones en formato JSON.*Ejemplo de API en este sentido es OMDBAPI*(https://www.omdbapi.com/) a la que se le pueden hacer*peticiones con diferentes parámetros que allí nos indica.*Por ejemplo, si quisiera obtener información en formato JSON de*la película Casablanca podría hacer la siguiente petición:*https://www.omdbapi.com/?apikey=46546cb7&amp;t=Casablanca*NOTA: He tenido que obtener un apikey que en el caso de esta*web nos permite de manera gratuita hacer 1000 consultas al día    <Text nLength="58" nType="PortionType::Text" nHeight="367" nWidth="9627" Portion="5. Busca alguna API que pueda devolverte informaci&#xF3;n sobre"/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak nWidth="9627" Line="5. Busca alguna API que pueda devolverte informaci&#xF3;n sobre*"/>
+    <Text nLength="59" nType="PortionType::Text" nHeight="367" nWidth="9385" Portion="alguna cuesti&#xF3;n que te resulte de inter&#xE9;s y que devuelva el"/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak nWidth="9385" Line="alguna cuesti&#xF3;n que te resulte de inter&#xE9;s y que devuelva el*"/>
+    <Text nLength="44" nType="PortionType::Text" nHeight="367" nWidth="7089" Portion="resultado de tus peticiones en formato JSON."/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak nWidth="7089" Line="resultado de tus peticiones en formato JSON.*"/>
+    <Text nLength="41" nType="PortionType::Text" nHeight="367" nWidth="6926" Portion="Ejemplo de API en este sentido es OMDBAPI"/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak nWidth="6926" Line="Ejemplo de API en este sentido es OMDBAPI*"/>
+    <Text nLength="54" nType="PortionType::Text" nHeight="367" nWidth="8962" Portion="(https://www.omdbapi.com/) a la que se le pueden hacer"/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak nWidth="8962" Line="(https://www.omdbapi.com/) a la que se le pueden hacer*"/>
+    <Text nLength="57" nType="PortionType::Text" nHeight="367" nWidth="8938" Portion="peticiones con diferentes par&#xE1;metros que all&#xED; nos indica."/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak nWidth="8938" Line="peticiones con diferentes par&#xE1;metros que all&#xED; nos indica.*"/>
+    <Text nLength="56" nType="PortionType::Lay" nHeight="367" nWidth="8909" Portion="Por ejemplo, si quisiera obtener informaci&#xF3;n en formato "/>
+    <LineBreak nWidth="8909" Line="Por ejemplo, si quisiera obtener informaci&#xF3;n en formato "/>
+    <Text nLength="7" nType="PortionType::Text" nHeight="367" nWidth="1271" Portion="JSON de"/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak nWidth="1271" Line="JSON de*"/>
+    <Text nLength="58" nType="PortionType::Text" nHeight="367" nWidth="9006" Portion="la pel&#xED;cula Casablanca podr&#xED;a hacer la siguiente petici&#xF3;n:"/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak nWidth="9006" Line="la pel&#xED;cula Casablanca podr&#xED;a hacer la siguiente petici&#xF3;n:*"/>
+    <Text nLength="25" nType="PortionType::Lay" nHeight="367" nWidth="4400" Portion="https://www.omdbapi.com/?"/>
+    <LineBreak nWidth="4400" Line="https://www.omdbapi.com/?"/>
+    <Text nLength="28" nType="PortionType::Text" nHeight="367" nWidth="5321" Portion="apikey=46546cb7&amp;t=Casablanca"/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak nWidth="5321" Line="apikey=46546cb7&amp;t=Casablanca*"/>
+    <Text nLength="56" nType="PortionType::Lay" nHeight="367" nWidth="9241" Portion="NOTA: He tenido que obtener un apikey que en el caso de "/>
+    <LineBreak nWidth="9241" Line="NOTA: He tenido que obtener un apikey que en el caso de "/>
+    <Text nLength="4" nType="PortionType::Text" nHeight="367" nWidth="675" Portion="esta"/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak nWidth="675" Line="esta*"/>
+    <Text nLength="56" nType="PortionType::Lay" nHeight="367" nWidth="9386" Portion="web nos permite de manera gratuita hacer 1000 consultas "/>
+    <LineBreak nWidth="9386" Line="web nos permite de manera gratuita hacer 1000 consultas "/>
+    <Text nLength="6" nType="PortionType::Lay" nHeight="367" nWidth="861" Portion="al d&#xED;a"/>
+    <LineBreak nWidth="861" Line="al d&#xED;a"/>
+    <Finish/>
+   </txt>
+  </body>
+ </page>
+</root>
