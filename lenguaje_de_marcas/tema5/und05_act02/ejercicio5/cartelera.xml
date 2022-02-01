@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
-<cartelera 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-			xsi:noNamespaceSchemaLocation="XMLSchemaAvanzados06_cartelera.xsd">
+<cartelera xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="./cartelera.xml" 
+	xsi:SchemaLocation="./cartelera.xsd">	>
 			
-  <película código="1" duración="152" año="2002">
-	<título>AQUELLAS JUERGAS UNIVERSITARIAS</título>
-	<título_original>Old School</título_original>
+  <pelicula codigo="1" duracion="152" aÃ±o="2002">
+	<titulo>AQUELLAS JUERGAS UNIVERSITARIAS</titulo>
+	<titulo_original>Old School</titulo_original>
 	<nacionalidad>Estados Unidos</nacionalidad>
-	<género>Comedia</género>
-	<clasificación edad="tp"/>
+	<genero>Comedia</genero>
+	<clasificacion edad="tp"/>
 	<sinopsis>
-	Mitch, Frank y Beanie son tres amigos treintañeros cuyas vidas no son
- 	exactamente lo que esperaban. Mitch tiene una novia ninfómana que se mete en
+	Mitch, Frank y Beanie son tres amigos treintaï¿½eros cuyas vidas no son
+ 	exactamente lo que esperaban. Mitch tiene una novia ninfï¿½mana que se mete en
 	la cama con el primero que agarra. Frank se ha casado y su matrimonio nada
-  	tiene que ver con las juergas salvajes que organizaban años atrás. Y Beanie es
+  	tiene que ver con las juergas salvajes que organizaban aï¿½os atrï¿½s. Y Beanie es
   	un padre de  familia que se muere por recuperar su alocada juventud. Pero las
   	cosas cambian cuando Beanie sugiere que creen su propia fraternidad, en la
-  	nueva casa que Mitch tiene junto al campus de la universidad. Una ocasión para
+  	nueva casa que Mitch tiene junto al campus de la universidad. Una ocasiï¿½n para
   	revivir tiempos gloriosos, hacer nuevos amigos y de volver a sus viejas,
   	salvajes y desmadradas juergas de estudiantes.
 	</sinopsis>
@@ -27,31 +28,32 @@
 	</reparto>
 	<web>http://www.uip.es</web>
 	<cartel>caratulas/Aquellas juergas.jpg</cartel>
-  </película>
-  <película código="17" duración="06">
-	<título>EL ORO DE MOSCÚ</título>
-	<nacionalidad>España</nacionalidad>
-	<género>Comedia</género>
+
+	
+</pelicula> 
+  <pelicula codigo="17" duracion="06">
+	<titulo>EL ORO DE MOSCï¿½</titulo>
+	<nacionalidad>Espaï¿½a</nacionalidad>
+	<genero>Comedia</genero>
 	<sin_clasificar/>
 	<sinopsis>
-	  Por una extraña coincidencia del destino, alguien recibe una información
-	  extraconfidencial de un anciano en sus últimos segundos de vida: el secreto
+	  Por una extraï¿½a coincidencia del destino, alguien recibe una informaciï¿½n
+	  extraconfidencial de un anciano en sus ï¿½ltimos segundos de vida: el secreto
 	  mejor guardado de la Historia. El receptor, un trabajador de hospital, se lo
 	  comunica secretamente a un supuesto amigo. Ambos inician una aventura
 	  rocambolesca y llena de misterio. Ante la inutilidad de sus intentos y muy a
-	  su pesar, tienen que recurrir a otras personas que así mismo van cayendo en el
+	  su pesar, tienen que recurrir a otras personas que asï¿½ mismo van cayendo en el
 	  pozo sin fondo que conlleva descifrar el enigma.
 	  </sinopsis>
-	<director>Jesús Bonilla</director>
+	<director>Jesï¿½s Bonilla</director>
 	<reparto>
-		<actor>Jesús Bonilla</actor>
+		<actor>Jesï¿½s Bonilla</actor>
 		<actor>Santiago Segura</actor>
 		<actor>Alfredo Landa</actor>
 		<actor>Concha Velasco</actor>
 		<actor>Antonio Resines</actor>
-		<actor>Gabino Diego, María Barranco</actor>
-		<actor>María Barranco</actor>
+		<actor>Gabino Diego, Marï¿½a Barranco</actor>
+		<actor>Marï¿½a Barranco</actor>
 	</reparto>
-  </película>
+  </pelicula>
 </cartelera>
-

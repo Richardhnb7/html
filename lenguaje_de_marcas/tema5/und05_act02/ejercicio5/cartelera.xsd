@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    xmlns="./persona.xml" 
+    targetNamespace="./persona.xml" 
+    elementFormDefault="qualified">
+    <xs:element name="cartelera">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="pelicula">
+                    <xs:complexType mixed="true">
+                        <xs:sequence>
+                            <xs:element name="titulo">
+                                <xs:simpleType >
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="80"/>
+                                        <xs:minLength value="4"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="titulo_original" type="xs:string"/>
+                            <xs:element name="nacionalidad" type="xs:string" />
+                            <xs:element name="genero" type="xs:string" />
+
+                            <xs:element name="titulo">
+                                <xs:simpleType >
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="sin clasificar"/> 
+                                        <xs:enumeration value="tp"/>
+                                        <xs:enumeration value="8"/> 
+                                        <xs:enumeration value="16"/> 
+                                        <xs:enumeration value="18"/>  
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="sinopsis" type="xs:string" />
+                            <xs:element name="director" type="xs:string" />
+                            <xs:element name="reparto" minOccurs="1" maxOccurs="unbounded"  > 
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="fechanacimiento" type="xs:string"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>    
+                            </xs:element>
+                            <xs:element name="web" type="xs:string" />
+                            <xs:element name="cartel" type="xs:string" />
+                        </xs:sequence> 
+                        <xs:attribute name="codigo" type="xs:integer"/>
+                        <xs:attribute name="duracion" type="xs:integer"/>
+
+                        <xs:attribute name="año" default="2003" >
+                            <xs:simpleType>
+                                <xs:restriction base="xs:integer">
+                                    <xs:minInclusive value="1919"/>
+                                    <xs:maxInclusive value="2022"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>            
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
