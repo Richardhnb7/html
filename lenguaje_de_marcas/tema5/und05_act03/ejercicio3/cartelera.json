@@ -1,0 +1,79 @@
+{
+    "cartelera": {
+      "pelicula": [
+        {
+          "-codigo": "1",
+          "-duracion": "152",
+          "-año": "2002",
+          "titulo": "AQUELLAS JUERGAS UNIVERSITARIAS",
+          "titulo_original": "Old School",
+          "nacionalidad": "Estados Unidos",
+          "genero": "Comedia",
+          "clasificacion": {
+            "-edad": "tp",
+            "-self-closing": "true"
+          },
+          "sinopsis": "\n\tMitch, Frank y Beanie son tres amigos treinta�eros cuyas vidas no son\n \texactamente lo que esperaban. Mitch tiene una novia ninf�mana que se mete en\n\tla cama con el primero que agarra. Frank se ha casado y su matrimonio nada\n  \ttiene que ver con las juergas salvajes que organizaban a�os atr�s. Y Beanie es\n  \tun padre de  familia que se muere por recuperar su alocada juventud. Pero las\n  \tcosas cambian cuando Beanie sugiere que creen su propia fraternidad, en la\n  \tnueva casa que Mitch tiene junto al campus de la universidad. Una ocasi�n para\n  \trevivir tiempos gloriosos, hacer nuevos amigos y de volver a sus viejas,\n  \tsalvajes y desmadradas juergas de estudiantes.\n\t",
+          "director": "Todd Philips",
+          "reparto": {
+            "actor": [
+              {
+                "nombre": "Will",
+                "apellidos": "Ferrell",
+                "fechaNacimiento": "1967-07-16"
+              },
+              {
+                "nombre": "Luke",
+                "apellidos": "Wilson",
+                "fechaNacimiento": "1971-09-21"
+              },
+              {
+                "nombre": "Vince",
+                "apellidos": "Vaughn",
+                "fechaNacimiento": "1970-03-28"
+              }
+            ]
+          },
+          "web": "http://www.uip.es",
+          "cartel": "caratulas/Aquellas juergas.jpg"
+        },
+        {
+          "-codigo": "17",
+          "-duracion": "06",
+          "titulo": "EL ORO DE MOSC�",
+          "nacionalidad": "Espa�a",
+          "genero": "Comedia",
+          "sin_clasificar": {
+            "-self-closing": "true"
+          },
+          "sinopsis": "\n\t  Por una extra�a coincidencia del destino, alguien recibe una informaci�n\n\t  extraconfidencial de un anciano en sus �ltimos segundos de vida: el secreto\n\t  mejor guardado de la Historia. El receptor, un trabajador de hospital, se lo\n\t  comunica secretamente a un supuesto amigo. Ambos inician una aventura\n\t  rocambolesca y llena de misterio. Ante la inutilidad de sus intentos y muy a\n\t  su pesar, tienen que recurrir a otras personas que as� mismo van cayendo en el\n\t  pozo sin fondo que conlleva descifrar el enigma.\n\t  ",
+          "director": "Jes�s Bonilla",
+          "reparto": {
+            "actor": [
+              {
+                "nombre": "Jes�s",
+                "apellidos": "Bonilla",
+                "fechaNacimiento": "1955-09-01"
+              },
+              {
+                "nombre": "Santiago",
+                "apellidos": "Segura",
+                "fechaNacimiento": "1965-07-17"
+              },
+              {
+                "nombre": "Alfredo",
+                "apellidos": "Landa",
+                "fechaNacimiento": "1933-03-03"
+              },
+              {
+                "nombre": "Concha",
+                "apellidos": "Velasco",
+                "fechaNacimiento": "1939-11-29"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "#encoding": "ISO-8859-1"
+  }
